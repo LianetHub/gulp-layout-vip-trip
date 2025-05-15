@@ -1,0 +1,32 @@
+[
+    {
+        "image": "@img/promo/services/01.jpg",
+        "name": "Трансфер в аэропорт",
+        "desc": "Мы доставим вас на <strong>вип такси</strong> из в аэропорта в <strong>Сочи</strong>, <strong>Адлер</strong> или на <strong>Красную поляну</strong>."
+    },
+    {
+        "image": "@img/promo/services/02.jpg",
+        "name": "Деловые поездки",
+        "desc": "<strong>Vip-такси в Сочи с водителем</strong> - точно в назначенное время, респектабельно, кофортно, с личным <strong>водителем</strong>."
+    },
+    {
+        "image": "@img/promo/services/03.jpg",
+        "name": "Автомобиль на свадьбу",
+        "desc": "Заказав роскошный <strong>Майбах с водителем</strong>, вы обеспечите себе яркие эмоции в день бракосочетания."
+    },
+    {
+        "image": "@img/promo/services/04.jpg",
+        "name": "Аренда яхты в Сочи",
+        "desc": "Организуем морские прогулки на яхтах с кетеринговым сервисом для досуга и деловых встреч."
+    },
+    {
+        "image": "@img/promo/services/05.jpg",
+        "name": "Трансфер в горы",
+        "desc": "Комфортабельный <strong>трансфер на Mercedes</strong> из <strong>Сочи</strong> в горнолыжные курорты <strong>Красная Поляна</strong> и <strong>Роза Хутор</strong>."
+    },
+    {
+        "image": "@img/promo/services/06.jpg",
+        "name": "Аренда с охраной",
+        "desc": "Заказ <strong>Maybach с охраной</strong> в Сочи — безопасность, статус и комфорт на высшем уровне."
+    }
+]
