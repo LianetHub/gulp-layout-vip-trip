@@ -1,8 +1,8 @@
 @font-face {
-                            font-family: 'fontawesome';
+                            font-family: 'Mulish';
                             font-display: swap;
-                            src: url("../fonts/fontawesome.woff2") format("woff2"), url("../fonts/fontawesome.woff") format("woff");
-                            font-weight: 400;
+                            src: url("../fonts/Mulish-Medium.woff2") format("woff2"), url("../fonts/Mulish-Medium.woff") format("woff");
+                            font-weight: 500;
                             font-style: normal;
                         }
 @font-face {
@@ -11,20 +11,6 @@
                             src: url("../fonts/icons.woff2") format("woff2"), url("../fonts/icons.woff") format("woff");
                             font-weight: 400;
                             font-style: normal;
-                        }
-@font-face {
-                            font-family: 'Mulish';
-                            font-display: swap;
-                            src: url("../fonts/Mulish-Medium.woff2") format("woff2"), url("../fonts/Mulish-Medium.woff") format("woff");
-                            font-weight: 500;
-                            font-style: normal;
-                        }
-@font-face {
-                            font-family: 'STIXTwoText';
-                            font-display: swap;
-                            src: url("../fonts/STIXTwoText-Italic.woff2") format("woff2"), url("../fonts/STIXTwoText-Italic.woff") format("woff");
-                            font-weight: 400;
-                            font-style: italic;
                         }
 @font-face {
                             font-family: 'Mulish';
@@ -43,14 +29,21 @@
 @font-face {
                             font-family: 'STIXTwoText';
                             font-display: swap;
-                            src: url("../fonts/STIXTwoText-Regular.woff2") format("woff2"), url("../fonts/STIXTwoText-Regular.woff") format("woff");
+                            src: url("../fonts/STIXTwoText-Italic.woff2") format("woff2"), url("../fonts/STIXTwoText-Italic.woff") format("woff");
                             font-weight: 400;
-                            font-style: normal;
+                            font-style: italic;
                         }
 @font-face {
                             font-family: 'Taviraj';
                             font-display: swap;
                             src: url("../fonts/Taviraj-Medium-Italic.woff2") format("woff2"), url("../fonts/Taviraj-Medium-Italic.woff") format("woff");
                             font-weight: 500;
+                            font-style: normal;
+                        }
+@font-face {
+                            font-family: 'STIXTwoText';
+                            font-display: swap;
+                            src: url("../fonts/STIXTwoText-Regular.woff2") format("woff2"), url("../fonts/STIXTwoText-Regular.woff") format("woff");
+                            font-weight: 400;
                             font-style: normal;
                         }

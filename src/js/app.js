@@ -1,5 +1,6 @@
 "use strict";
 
+
 // const { default: Swiper } = require("swiper");
 
 // Инициализация Fancybox
@@ -35,18 +36,38 @@ $(document).ready(function () {
         new Swiper('.promo__slider', {
             slidesPerView: 1,
             effect: "fade",
+            loop: true,
+            speed: 1000,
+            autoplay: {
+                delay: 7000,
+                disableOnInteraction: false
+            },
             fadeEffect: {
                 crossFade: true
+            },
+            pagination: {
+                el: ".promo__pagination",
+                clickable: true
             }
         })
+
+
     }
 
     if ($('.promo__services-slider').length) {
         new Swiper('.promo__services-slider .swiper', {
-            slidesPerView: 3,
+            slidesPerView: 1,
             navigation: {
                 nextEl: ".promo__services-next",
                 prevEl: ".promo__services-prev",
+            },
+            breakpoints: {
+                767.98: {
+                    slidesPerView: 2
+                },
+                1100: {
+                    slidesPerView: 3
+                }
             }
         })
     }
