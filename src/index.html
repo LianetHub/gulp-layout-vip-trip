@@ -79,41 +79,144 @@
                         </div>
                     </div>
                 </section>
+                <div class="catalog">
+                    <div class="container">
+                        <div class="row">
+                            @@loop('./html/templates/_car.html', [])
+                        </div>
+                    </div>
+                </div>
+                <section class="comfort">
+                    <div class="container">
+                        <div class="comfort__body">
+                            <p class="comfort__desc">Компания VipTrip готова предложить вам в аренду представительские седаны от таких мировых лидеров рынка, как Mercedes-Benz и Hongqi, а также микроавтобусы класса люкс для большой компании или семьи. Мягкие кожаные сиденья и приятная прохлада будут сопровождать вас в поездке. Обслуживать Вас будут лучшие водители, которые великолепно знают наш город. С ними можно спокойно погрузиться в раздумья в тишине или приятно побеседовать – выбор за вами!</p>
+                            <h5 class="comfort__title title"><span class="color-accent">Безупречный комфорт</span>премиум класса в Сочи</h5>
+                            <div class="comfort__image"></div>
+                        </div>
+                    </div>
+                </section>
+                <section class="benefits">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="benefits__image"></div>
+                            </div>
+                            <div class="col-6">
+                                <h3 class="benefits__title">
+                                    <span class="color-accent">В аренду автомобиля в Сочи</span> включены опции
+                                </h3>
+                                <ul class="benefits__list">
+                                    <li class="benefits__item">
+                                        <div class="benefits__item-icon"></div>
+                                        <div class="benefits__item-text">Безопасность и приватность</div>
+                                    </li>
+                                    <li class="benefits__item">
+                                        <div class="benefits__item-icon"></div>
+                                        <div class="benefits__item-text">Встреча в <br> аэропорту</div>
+                                    </li>
+                                    <li class="benefits__item">
+                                        <div class="benefits__item-icon"></div>
+                                        <div class="benefits__item-text">Вода для каждого пассажира</div>
+                                    </li>
+                                    <li class="benefits__item">
+                                        <div class="benefits__item-icon"></div>
+                                        <div class="benefits__item-text">Водитель защитит от дождя</div>
+                                    </li>
+                                    <li class="benefits__item">
+                                        <div class="benefits__item-icon"></div>
+                                        <div class="benefits__item-text">Зарядка для телефонов</div>
+                                    </li>
+                                    <li class="benefits__item">
+                                        <div class="benefits__item-icon"></div>
+                                        <div class="benefits__item-text">Беспроводной интернет</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="car-order">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-8">
+                                <h4 class="car-order__title">
+                                    Как заказать <span class="color-accent"> автомобиль класса люкс </span> в Сочи
+                                </h4>
+                                <div class="car-order__body">
+                                    <p>Наши менеджеры доступны <strong>24/7</strong>, они всегда помогут вам с выбором автомобиля, предложат дополнительные сервисы и пойдут навстречу в каких-то особых обстоятельствах и предложат лучшие условия на аренду <strong>Мерседес с водителем</strong> или <strong>трансфер</strong>. Для оформления аренды автомобиля с водителем в Сочи вы можете сделать заказ через Корзину, позвонить по телефону, написать в <a href="https://wa.me/79384594676" target="_blank" rel="noopener">WhatsApp</a> или воспользоваться формой. Заказывая в аренду <strong>автомобиль с водителем</strong> у нас, вы всегда получаете:</p>
+                                    <ul class="lte-list">
+                                        <li>Лучшие представительские седаны и микроавтобусы <strong>Mercedes-Benz</strong> и <strong>Hongqi</strong> в максимальной комплектации</li>
+                                        <li>Пунктуальность – автомобиль прибудет точно в оговоренное время и доставит вас в пункт назначения без опоздания</li>
+                                        <li>Водители под стать своим автомобилям – респектабельные, квалифицированные, деликатные, способные решить любые задачи</li>
+                                        <li>Идеальная чистота – производится чистка и обработка салона перед каждым пассажиром</li>
+                                        <li>Доступные опции – бутилированная вода, Wi-Fi, зарядки для гаджетов, зонт</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                @@include('./html/_main-form.html')
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="transfer">
+                    <div class="container">
+                        <div class="transfer__body text-center">
+                            <h2 class="transfer__title title"><span class="color-accent">Трансфера по Черноморью </span> премиум-класса</h2>
+                            <div class="transfer__desc">
+                                <p>Путешествие по Черноморскому побережью – это настоящая романтика! Будь то бизнес-планы, деловые встречи, корпоративные мероприятия или семейный отдых - каждый из вас обязан воспользоваться возможностями, которые предлагает компания VipTrip.</p>
+                                <p>Мы возьмем на себя организацию вашего перемещения в свои руки на протяжении всего вашего путешествия - премиальные автомобили, морской или авиа транспорт.</p>
+                                <p>Мы создадим для вас атмосферу элитного отдыха и предложим вам множество дополнительных опций и сопутствующих услуг во время вашего пребывания в Сочи и в путешествиях по Черноморскому побережью Кавказа. Вы можете обратиться к нашим менеджерам с любым запросом, и мы поможем вам с организацией и реализацией вашего отдыха.</p>
+                            </div>
+                            <a href="" class="transfer__btn btn btn-primary icon-right">Подробнее</a>
+                        </div>
+                    </div>
+                </section>
+                <section class="banner">
+                    <div class="container">
+                        <div class="banner__body">
+                            <h2 class="banner__title">
+                                <span class="banner__title-precent">10%</span>
+                                <span class="banner__title-text">Скидка <span>для всех постоянных клиентов</span> на заказ автомобилей люкс в Сочи</span>
+                            </h2>
+                            <div class="banner__image"></div>
+                        </div>
+                    </div>
+                </section>
+                <section class="blog">
+                    <div class="container">
+                        <div class="blog__caption">Наш блог</div>
+                        <h2 class="blog__title">Популярные статьи</h2>
+                        <ul class="blog__list">
+                            @@loop('./html/templates/_blog-item.html',[])
+                        </ul>
+                        <a href="" class="blog__btn btn btn-primary icon-right">Подробнее</a>
+                    </div>
+                </section>
+                <section class="about">
+                    <div class="container">
+                        <h2 class="about__title">
+                            <span class="color-accent">О нашем бренде</span> Ваш комфорт - наша миссия
+                        </h2>
+                        <div class="about__body">
+                            <p>
+                                Компания VipTrip была основана в 2020 году, но уже успела завоевать доверие клиентов и зарекомендовать себя, как сервис лучший автопарк элитных автомобилей в Сочи. В основу нашего бренда легли присущие сибирякам – четкость, щепетильность и порядочность. И, конечно, любовь к комфорту и роскоши.
+                                В своей работе мы учитываем все мелочи, которые способны повлиять на уровень комфорта наших клиентов. И это проявляется не только в комплектации автомобилей, но и в уровне обслуживания. Мы долго подбирали команду наших водителей и сейчас уверены в профессионализме каждого из них. У каждого из наших сотрудников уже сложилась собственная база постоянных клиентов. Когда нужно – они могут поддержать приятный разговор, или, наоборот, красноречиво промолчать, чтобы не отвлекать вас от важных мыслей или созерцания живописного пейзажа во время вашего путешествия в Сочи.
+                            </p>
+                            <p>
+                                Наша компания специализируется на предоставлении услуг бизнес-такси, но мы постоянно расширяем спектр наших сервисов и стараемся предоставить нашим клиентам максимально широкий спектр услуг для их комфорта в деловых и развлекательных поездках. Чтобы узнать о всех доступных услугах рекомендуем вам посетить соответствующий раздел нашего сайта.
+                            </p>
+                        </div>
+                        <a href="" class="about__btn btn btn-primary icon-right">Подробнее</a>
+                    </div>
+                </section>
 
                 <div class="row centered">
 
 
-                    <!--Taxi-->
-                    <section class="main-page-taxi">
-                        <div class="main-page-taxi__container">
-                            <div class="main-page-taxi__content" style="background-image: url(https://viptriponline.ru/wp-content/uploads/2020/11/about-map.png);">
-                                <div class="main-page-taxi__content-container">
-                                    <div class="main-page-taxi__text">
-                                        <div class="lte-heading lte-size-md lte-style-default lte-subcolor-main heading-tag-h3 heading-subtag-h6">
-                                            <div class="lte-heading-content">
-                                                <h3 class="lte-header"><span> Трансфер премиум-класса </span> и отдых люкс</h3>
-                                            </div>
-                                        </div>
-                                        <div class="normal">
-                                            <p>В нашем автопарке работают только новые автомобили, приобретенные нашей компанией специально для оказания vip услуг – <strong>трансфер</strong> и <strong>аренда премиальных автомобилей с водителем</strong> в Сочи и Краснодарскому краю.<br />
-                                                <strong>Водители</strong> – солидные, вежливые и квалифицированные. Наша команда всегда старается индивидуально подходить к каждому клиенту и его запросам. Мы работаем как с частным, так и с корпоративным сегментом. Среди наших клиентов – российские и мировые звезды, Формула-1, Российский инвестиционный и Петербургский международный экономический форумы, а также компании <strong>Сбербанк</strong>, <strong>Газпром</strong>, <strong>Норникель</strong>.
-                                            </p>
-                                        </div>
-                                        <div class="lte-btn-wrap">
-                                            <a href="/o-nas" class="lte-btn color-hover-default"><span class="lte-btn-inner"><span class="lte-btn-before"></span>Подробнее<span class="lte-btn-after"></span></span></a>
-                                        </div>
-                                    </div>
-                                    <div class="main-page-taxi__car">
-                                        <img width="1024" height="413" src="https://viptriponline.ru/wp-content/uploads/2019/06/car_rent.png" class="attachment-large size-large" alt="" decoding="async" srcset="https://viptriponline.ru/wp-content/uploads/2019/06/car_rent.png 1024w, https://viptriponline.ru/wp-content/uploads/2019/06/car_rent-300x121.png 300w, https://viptriponline.ru/wp-content/uploads/2019/06/car_rent-768x310.png 768w, https://viptriponline.ru/wp-content/uploads/2019/06/car_rent-800x323.png 800w, https://viptriponline.ru/wp-content/uploads/2019/06/car_rent-480x194.png 480w, https://viptriponline.ru/wp-content/uploads/2019/06/car_rent-600x242.png 600w" sizes="(max-width: 1024px) 100vw, 1024px" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <!--Taxi - end-->
 
                     <!--Cars-->
-                    <section class="main-page-cars">
+                    <!-- <section class="main-page-cars">
                         <div class="main-page-cars__container">
                             <div class="woocommerce-notices-wrapper"></div>
                             <div class="lte-rental-sc lte-limmo-white">
@@ -121,7 +224,8 @@
                                     <div class="col-lg-4 col-md-6 col-sm-6">
                                         <article class="lte-rental-item">
                                             <a href="https://viptriponline.ru/product/arenda-hongqi-e-hs9-v-sochi" class="lte-photo">
-                                                <img width="1000" height="667" src="https://viptriponline.ru/wp-content/uploads/2019/06/ehs9_general.jpg?v=1693940007" class="attachment-limme-gallery-big size-limme-gallery-big" alt="" decoding="async" srcset="https://viptriponline.ru/wp-content/uploads/2019/06/ehs9_general.jpg?v=1693940007 1000w, https://viptriponline.ru/wp-content/uploads/2019/06/ehs9_general-300x200.jpg?v=1693940007 300w, https://viptriponline.ru/wp-content/uploads/2019/06/ehs9_general-768x512.jpg?v=1693940007 768w, https://viptriponline.ru/wp-content/uploads/2019/06/ehs9_general-800x534.jpg?v=1693940007 800w, https://viptriponline.ru/wp-content/uploads/2019/06/ehs9_general-480x320.jpg?v=1693940007 480w, https://viptriponline.ru/wp-content/uploads/2019/06/ehs9_general-600x400.jpg?v=1693940007 600w" sizes="(max-width: 1000px) 100vw, 1000px" /> </a>
+                                                <img width="1000" height="667" src="https://viptriponline.ru/wp-content/uploads/2019/06/ehs9_general.jpg?v=1693940007" class="attachment-limme-gallery-big size-limme-gallery-big" alt="" decoding="async" srcset="https://viptriponline.ru/wp-content/uploads/2019/06/ehs9_general.jpg?v=1693940007 1000w, https://viptriponline.ru/wp-content/uploads/2019/06/ehs9_general-300x200.jpg?v=1693940007 300w, https://viptriponline.ru/wp-content/uploads/2019/06/ehs9_general-768x512.jpg?v=1693940007 768w, https://viptriponline.ru/wp-content/uploads/2019/06/ehs9_general-800x534.jpg?v=1693940007 800w, https://viptriponline.ru/wp-content/uploads/2019/06/ehs9_general-480x320.jpg?v=1693940007 480w, https://viptriponline.ru/wp-content/uploads/2019/06/ehs9_general-600x400.jpg?v=1693940007 600w" sizes="(max-width: 1000px) 100vw, 1000px" />
+                                            </a>
                                             <div class="lte-rental-inner">
                                                 <h5 class="lte-header">
                                                     <a href="https://viptriponline.ru/product/arenda-hongqi-e-hs9-v-sochi">Аренда Hongqi E-HS9 в Сочи с водителем</a>
@@ -469,11 +573,11 @@
                                 </div>
                             </div>
                         </div>
-                    </section>
+                    </section> -->
                     <!--Cars - end-->
 
                     <!--Animated limo-->
-                    <section class="main-page-limo" style="background-image: url(https://viptriponline.ru/wp-content/uploads/2020/11/about-sky.png);">
+                    <!-- <section class="main-page-limo" style="background-image: url(https://viptriponline.ru/wp-content/uploads/2020/11/about-sky.png);">
                         <div class="main-page-limo__container">
                             <div class="main-page-limo__text">
                                 <div class="lte-heading lte-style-italic heading-tag-h5 heading-subtag-h6">
@@ -493,11 +597,11 @@
                         <div class="main-page-limo__car js-animatedScroll">
                             <img width="1535" height="520" src="https://viptriponline.ru/wp-content/uploads/2019/06/maybach_driving.png" class="attachment-full size-full" alt="" decoding="async" srcset="https://viptriponline.ru/wp-content/uploads/2019/06/maybach_driving.png 1535w, https://viptriponline.ru/wp-content/uploads/2019/06/maybach_driving-300x102.png 300w, https://viptriponline.ru/wp-content/uploads/2019/06/maybach_driving-1024x347.png 1024w, https://viptriponline.ru/wp-content/uploads/2019/06/maybach_driving-768x260.png 768w, https://viptriponline.ru/wp-content/uploads/2019/06/maybach_driving-800x271.png 800w, https://viptriponline.ru/wp-content/uploads/2019/06/maybach_driving-480x163.png 480w, https://viptriponline.ru/wp-content/uploads/2019/06/maybach_driving-600x203.png 600w" sizes="(max-width: 1535px) 100vw, 1535px" />
                         </div>
-                    </section>
+                    </section> -->
 
                     <!--Animated limo - end-->
                     <!--Options-->
-                    <section class="main-page-options lte-background-black">
+                    <!-- <section class="main-page-options lte-background-black">
                         <div class="main-page-options__container">
                             <div class="main-page-options__image">
                                 <img width="1366" height="1564" src="https://viptriponline.ru/wp-content/uploads/2019/06/pilot_chair.jpg" class="attachment-full size-full" alt="" decoding="async" srcset="https://viptriponline.ru/wp-content/uploads/2019/06/pilot_chair.jpg 1366w, https://viptriponline.ru/wp-content/uploads/2019/06/pilot_chair-262x300.jpg 262w, https://viptriponline.ru/wp-content/uploads/2019/06/pilot_chair-894x1024.jpg 894w, https://viptriponline.ru/wp-content/uploads/2019/06/pilot_chair-768x879.jpg 768w, https://viptriponline.ru/wp-content/uploads/2019/06/pilot_chair-1342x1536.jpg 1342w, https://viptriponline.ru/wp-content/uploads/2019/06/pilot_chair-699x800.jpg 699w, https://viptriponline.ru/wp-content/uploads/2019/06/pilot_chair-480x550.jpg 480w, https://viptriponline.ru/wp-content/uploads/2019/06/pilot_chair-600x687.jpg 600w" sizes="(max-width: 1366px) 100vw, 1366px" />
@@ -509,7 +613,7 @@
                                     </div>
                                 </div>
                                 <div class="main-page-options__list">
-                                    <!--options list - скопировано с продакшн-->
+                                 
                                     <ul class="lte-block-icon icons-count-6 lte-icon-space-lg lte-icon-shape-default lte-icon-background-disabled lte-icon-border-disabled lte-icon-color-main lte-icon-divider-dashed lte-icon-inner-padding-no lte-icon-size-medium lte-header-color-default lte-icon-type-top lte-icon-align- lte-hover-animation-yes layout-cols3 lte-additional-disabled">
                                         <li class=" col-lg-4 col-md-4 col-sm-4 col-ms-6 col-xs-6">
                                             <div class="lte-inner">
@@ -519,7 +623,9 @@
                                         </li>
                                         <li class=" col-lg-4 col-md-4 col-sm-4 col-ms-6 col-xs-6">
                                             <div class="lte-inner">
-                                                <img width="60" height="60" src="https://viptriponline.ru/wp-content/uploads/2022/07/aoroplane.svg" class="attachment-60 size-60" alt="" decoding="async" /> <span class="lte-icon-content"> <span class="lte-header lte-span">Встреча в<br />
+                                                <img width="60" height="60" src="https://viptriponline.ru/wp-content/uploads/2022/07/aoroplane.svg"
+                                                 class="attachment-60 size-60" alt="" decoding="async" /> <span class="lte-icon-content">
+                                                     <span class="lte-header lte-span">Встреча в<br />
                                                         аэропорту</span> </span>
                                             </div>
                                         </li>
@@ -550,15 +656,15 @@
                                             </div>
                                         </li>
                                     </ul>
-                                    <!--options list - скопировано с продакшн - конец-->
+                          
                                 </div>
                             </div>
                         </div>
-                    </section>
+                    </section> -->
                     <!--Options - end-->
 
                     <!--Order-->
-                    <section class="main-page-order">
+                    <!-- <section class="main-page-order">
                         <div class="main-page-order__container">
                             <div class="main-page-order__text">
                                 <div class="main-page-order__header">
@@ -661,11 +767,11 @@
                                 </div>
                             </div>
                         </div>
-                    </section>
+                    </section> -->
                     <!--Order - end-->
 
                     <!--Parallax text#1-->
-                    <section class="main-page-romantic lte-overlay-wrapper-dark lte-parallax-yes" style="background-image: url(https://viptriponline.ru/wp-content/uploads/2019/06/lux_travelling.jpg);">
+                    <!-- <section class="main-page-romantic lte-overlay-wrapper-dark lte-parallax-yes" style="background-image: url(https://viptriponline.ru/wp-content/uploads/2019/06/lux_travelling.jpg);">
                         <div class="lte-background-overlay lte-overlay-dark"></div>
                         <div class="main-page-romantic__container">
                             <div class="lte-heading lte-size-bg lte-style-default lte-color-white lte-subcolor-main heading-tag-h2 heading-subtag-h6">
@@ -684,10 +790,10 @@
                                 <a href="/o-nas" class="lte-btn color-hover-default"><span class="lte-btn-inner"><span class="lte-btn-before"></span>Подробнее<span class="lte-btn-after"></span></span></a>
                             </div>
                         </div>
-                    </section>
+                    </section> -->
                     <!--Parallax text#1 - end-->
                     <!--Sale block-->
-                    <section class="main-page-sale lte-background-main">
+                    <!-- <section class="main-page-sale lte-background-main">
                         <div class="main-page-sale__container">
                             <div class="main-page-sale__text">
                                 <div class="lte-heading lte-size-lg lte-style-header-subheader lte-subcolor-main heading-tag-h2 heading-subtag-h6">
@@ -703,11 +809,11 @@
                             </div>
                             <div class="main-page-sale__image" style="https://viptriponline.ru/wp-content/uploads/2020/11/discount-card.png"></div>
                         </div>
-                    </section>
+                    </section> -->
                     <!--Sale block - end-->
 
                     <!--Articles-->
-                    <section class="main-page-articles">
+                    <!-- <section class="main-page-articles">
                         <div class="main-page-articles__container">
                             <div class="main-page-articles__header">
                                 <div class="lte-heading lte-style-header-subheader lte-underline lte-subcolor-main has-subheader heading-tag-h3 heading-subtag-h6">
@@ -718,7 +824,7 @@
                                 </div>
                             </div>
                             <div class="main-page-articles__list">
-                                <!--popular articles - код с продакшн-->
+                      
                                 <div class="blog lte-blog-sc row centered layout-featured-rows layout-cols-3">
                                     <div class="lte-featured-large col-xl-8 col-lg-7 col-md-12 col-sm-12 col-ms-12 col-xs-12">
                                         <article id="post-14461" class="post-14461 post type-post status-publish format-standard has-post-thumbnail hentry category---en tag-service tag-taxi tag-transfer">
@@ -753,7 +859,7 @@
                                         </article>
                                     </div>
                                 </div>
-                                <!--popular articles - код с продакшн - конец-->
+                  
                             </div>
                             <div class="main-page-articles__button">
                                 <div class="lte-btn-wrap">
@@ -761,11 +867,11 @@
                                 </div>
                             </div>
                         </div>
-                    </section>
+                    </section> -->
                     <!--Articles - end-->
 
                     <!--Parallax text#2-->
-                    <section class="main-page-brand lte-overlay-wrapper-dark lte-parallax-yes" style="background-image: url(https://viptriponline.ru/wp-content/uploads/2020/11/promo_parallax_02.jpg);">
+                    <!-- <section class="main-page-brand lte-overlay-wrapper-dark lte-parallax-yes" style="background-image: url(https://viptriponline.ru/wp-content/uploads/2020/11/promo_parallax_02.jpg);">
                         <div class="lte-background-overlay lte-overlay-dark"></div>
                         <div class="main-page-brand__container">
                             <div class="main-page-brand__header">
@@ -789,8 +895,8 @@
                                 </div>
                             </div>
                         </div>
-                    </section>
-                    Parallax text#2 - end
+                    </section> -->
+                    <!-- Parallax text#2 - end -->
                 </div>
 
             </main>
