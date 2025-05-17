@@ -37,7 +37,7 @@ $maxWidth: 1920; // Ширина макета
 $maxWidthContainer: rem(1160); // Максимальная ширина ограничивающего контейнера
 $containerPadding: 30;
 
-$text: #fff;
+$text: #192026;
 
 $accent: #d7b65d;
 
@@ -59,12 +59,8 @@ body {
 	min-width: 320px;
 	min-height: 100%;
 	line-height: normal;
-	background: #0f141e;
 	color: $text;
-	&.light-bg {
-		background: #fff;
-		color: #0f141e;
-	}
+	overflow-x: hidden;
 	&.lock {
 		overflow: hidden;
 		@media (min-width: $md2) {
@@ -79,10 +75,6 @@ body {
 	min-height: 100%;
 	display: flex;
 	flex-direction: column;
-	overflow-x: hidden;
-	@media (min-width: $md4) {
-		overflow-x: clip;
-	}
 }
 
 //================== ОБОЛОЧКА==================================
@@ -92,7 +84,7 @@ body {
 // Отзывчивая
 .container {
 	@media (min-width: $md0) {
-		max-width: 1570px;
+		max-width: 1540px;
 	}
 	@media (max-width: $md0) {
 		@media (min-width: $md1) {

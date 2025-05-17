@@ -31,6 +31,75 @@ $(document).ready(function () {
     }
 
 
+    // init select2
+    $('.select').select2({
+        minimumResultsForSearch: Infinity
+    })
+
+    // init datepicker
+    new Datepicker('.form__control-date')
+
+
+    // Input type="tel" Mask
+    if ($('input[type="tel"]').length > 0) {
+        $('input[type="tel"]').each(function (idx, input) {
+
+
+            const iti = intlTelInput(input, {
+                utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
+                initialCountry: "ru",
+                preferredCountries: ['ru'],
+                autoPlaceholder: false,
+                separateDialCode: true
+            });
+
+
+            function setMask() {
+                const mask = getFormattedNumber("9");
+                const formattedExampleNumber = getFormattedNumber();
+
+                $(input).inputmask('remove');
+                $(input).inputmask({
+                    "mask": mask,
+                    showMaskOnHover: false,
+                })
+
+                $(input).attr('placeholder', formattedExampleNumber);
+
+                $(input).on('blur', function () {
+                    $(input).attr('placeholder', formattedExampleNumber);
+                })
+
+            }
+
+            function getFormattedNumber(symbol = "_") {
+                const countryData = iti.getSelectedCountryData();
+
+                const exampleNumber = intlTelInputUtils.getExampleNumber(
+                    countryData.iso2,
+                    false,
+                    intlTelInputUtils.numberFormat.INTERNATIONAL
+                );
+
+                const numberWithoutDialCode = exampleNumber.replace(/^\+\d{1,3}/, '').trimStart();
+                const formattedNumber = numberWithoutDialCode.replace(/\d/g, symbol);
+
+                return formattedNumber;
+            }
+
+
+            $(input).on('countrychange', function () {
+                setMask();
+            });
+
+            iti.promise.then(function () {
+                setMask();
+            });
+
+
+        });
+    }
+
     // sliders
     if ($('.promo__slider').length) {
         new Swiper('.promo__slider', {

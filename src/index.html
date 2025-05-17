@@ -81,8 +81,8 @@
                 </section>
                 <div class="catalog">
                     <div class="container">
-                        <div class="row">
-                            @@loop('./html/templates/_car.html', [])
+                        <div class="row justify-content-center">
+                            @@loop('./html/templates/_car.html', './html/json/cars.json')
                         </div>
                     </div>
                 </div>
@@ -90,8 +90,10 @@
                     <div class="container">
                         <div class="comfort__body">
                             <p class="comfort__desc">Компания VipTrip готова предложить вам в аренду представительские седаны от таких мировых лидеров рынка, как Mercedes-Benz и Hongqi, а также микроавтобусы класса люкс для большой компании или семьи. Мягкие кожаные сиденья и приятная прохлада будут сопровождать вас в поездке. Обслуживать Вас будут лучшие водители, которые великолепно знают наш город. С ними можно спокойно погрузиться в раздумья в тишине или приятно побеседовать – выбор за вами!</p>
-                            <h5 class="comfort__title title"><span class="color-accent">Безупречный комфорт</span>премиум класса в Сочи</h5>
-                            <div class="comfort__image"></div>
+                            <h5 class="comfort__title title-xl"><span class="color-accent">Безупречный комфорт</span> премиум класса в Сочи</h5>
+                            <div class="comfort__image js-animatedScroll">
+                                <img src="@img/maybach_driving.png" alt="Фото Майбаха">
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -99,38 +101,54 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-6">
-                                <div class="benefits__image"></div>
+                                <div class="benefits__image">
+                                    <img src="@img/pilot_chair.jpg" alt="Фото салона">
+                                </div>
                             </div>
                             <div class="col-6">
-                                <h3 class="benefits__title">
+                                <h3 class="benefits__title title-sm">
                                     <span class="color-accent">В аренду автомобиля в Сочи</span> включены опции
                                 </h3>
-                                <ul class="benefits__list">
-                                    <li class="benefits__item">
-                                        <div class="benefits__item-icon"></div>
-                                        <div class="benefits__item-text">Безопасность и приватность</div>
-                                    </li>
-                                    <li class="benefits__item">
-                                        <div class="benefits__item-icon"></div>
-                                        <div class="benefits__item-text">Встреча в <br> аэропорту</div>
-                                    </li>
-                                    <li class="benefits__item">
-                                        <div class="benefits__item-icon"></div>
-                                        <div class="benefits__item-text">Вода для каждого пассажира</div>
-                                    </li>
-                                    <li class="benefits__item">
-                                        <div class="benefits__item-icon"></div>
-                                        <div class="benefits__item-text">Водитель защитит от дождя</div>
-                                    </li>
-                                    <li class="benefits__item">
-                                        <div class="benefits__item-icon"></div>
-                                        <div class="benefits__item-text">Зарядка для телефонов</div>
-                                    </li>
-                                    <li class="benefits__item">
-                                        <div class="benefits__item-icon"></div>
-                                        <div class="benefits__item-text">Беспроводной интернет</div>
-                                    </li>
-                                </ul>
+                                <div class="benefits__list">
+                                    <ul class="row">
+                                        <li class="benefits__item col-lg-4 col-md-4 col-sm-4 col-ms-6 col-xs-6">
+                                            <div class="benefits__item-icon">
+                                                <img src="@img/icons/secure-shield-password.svg" alt="Иконка">
+                                            </div>
+                                            <div class="benefits__item-text">Безопасность и <br> приватность</div>
+                                        </li>
+                                        <li class="benefits__item col-lg-4 col-md-4 col-sm-4 col-ms-6 col-xs-6">
+                                            <div class="benefits__item-icon">
+                                                <img src="@img/icons/aoroplane.svg" alt="Иконка">
+                                            </div>
+                                            <div class="benefits__item-text">Встреча в <br> аэропорту</div>
+                                        </li>
+                                        <li class="benefits__item col-lg-4 col-md-4 col-sm-4 col-ms-6 col-xs-6">
+                                            <div class="benefits__item-icon">
+                                                <img src="@img/icons/water-bottle.svg" alt="Иконка">
+                                            </div>
+                                            <div class="benefits__item-text">Вода для <br> каждого <br> пассажира</div>
+                                        </li>
+                                        <li class="benefits__item col-lg-4 col-md-4 col-sm-4 col-ms-6 col-xs-6">
+                                            <div class="benefits__item-icon">
+                                                <img src="@img/icons/umbrella.svg" alt="Иконка">
+                                            </div>
+                                            <div class="benefits__item-text">Водитель <br> защитит от <br> дождя</div>
+                                        </li>
+                                        <li class="benefits__item col-lg-4 col-md-4 col-sm-4 col-ms-6 col-xs-6">
+                                            <div class="benefits__item-icon">
+                                                <img src="@img/icons/battery.svg" alt="Иконка">
+                                            </div>
+                                            <div class="benefits__item-text">Зарядка для <br> телефонов</div>
+                                        </li>
+                                        <li class="benefits__item col-lg-4 col-md-4 col-sm-4 col-ms-6 col-xs-6">
+                                            <div class="benefits__item-icon">
+                                                <img src="@img/icons/wi-fi-wifi-internet.svg" alt="Иконка">
+                                            </div>
+                                            <div class="benefits__item-text">Беспроводной <br> интернет</div>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -138,22 +156,24 @@
                 <section class="car-order">
                     <div class="container">
                         <div class="row">
-                            <div class="col-8">
-                                <h4 class="car-order__title">
-                                    Как заказать <span class="color-accent"> автомобиль класса люкс </span> в Сочи
-                                </h4>
-                                <div class="car-order__body">
-                                    <p>Наши менеджеры доступны <strong>24/7</strong>, они всегда помогут вам с выбором автомобиля, предложат дополнительные сервисы и пойдут навстречу в каких-то особых обстоятельствах и предложат лучшие условия на аренду <strong>Мерседес с водителем</strong> или <strong>трансфер</strong>. Для оформления аренды автомобиля с водителем в Сочи вы можете сделать заказ через Корзину, позвонить по телефону, написать в <a href="https://wa.me/79384594676" target="_blank" rel="noopener">WhatsApp</a> или воспользоваться формой. Заказывая в аренду <strong>автомобиль с водителем</strong> у нас, вы всегда получаете:</p>
-                                    <ul class="lte-list">
-                                        <li>Лучшие представительские седаны и микроавтобусы <strong>Mercedes-Benz</strong> и <strong>Hongqi</strong> в максимальной комплектации</li>
-                                        <li>Пунктуальность – автомобиль прибудет точно в оговоренное время и доставит вас в пункт назначения без опоздания</li>
-                                        <li>Водители под стать своим автомобилям – респектабельные, квалифицированные, деликатные, способные решить любые задачи</li>
-                                        <li>Идеальная чистота – производится чистка и обработка салона перед каждым пассажиром</li>
-                                        <li>Доступные опции – бутилированная вода, Wi-Fi, зарядки для гаджетов, зонт</li>
-                                    </ul>
+                            <div class="col-6">
+                                <div class="car-order__main">
+                                    <h4 class="car-order__title title-sm">
+                                        Как заказать <span class="color-accent"> автомобиль класса люкс </span> в Сочи
+                                    </h4>
+                                    <div class="car-order__body">
+                                        <p>Наши менеджеры доступны <strong>24/7</strong>, они всегда помогут вам с выбором автомобиля, предложат дополнительные сервисы и пойдут навстречу в каких-то особых обстоятельствах и предложат лучшие условия на аренду <strong>Мерседес с водителем</strong> или <strong>трансфер</strong>. Для оформления аренды автомобиля с водителем в Сочи вы можете сделать заказ через Корзину, позвонить по телефону, написать в <a href="https://wa.me/79384594676" target="_blank" rel="noopener">WhatsApp</a> или воспользоваться формой. Заказывая в аренду <strong>автомобиль с водителем</strong> у нас, вы всегда получаете:</p>
+                                        <ul class="lte-list">
+                                            <li>Лучшие представительские седаны и микроавтобусы <strong>Mercedes-Benz</strong> и <strong>Hongqi</strong> в максимальной комплектации</li>
+                                            <li>Пунктуальность – автомобиль прибудет точно в оговоренное время и доставит вас в пункт назначения без опоздания</li>
+                                            <li>Водители под стать своим автомобилям – респектабельные, квалифицированные, деликатные, способные решить любые задачи</li>
+                                            <li>Идеальная чистота – производится чистка и обработка салона перед каждым пассажиром</li>
+                                            <li>Доступные опции – бутилированная вода, Wi-Fi, зарядки для гаджетов, зонт</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-6">
                                 @@include('./html/_main-form.html')
                             </div>
                         </div>
@@ -215,369 +235,8 @@
 
 
 
-                    <!--Cars-->
-                    <!-- <section class="main-page-cars">
-                        <div class="main-page-cars__container">
-                            <div class="woocommerce-notices-wrapper"></div>
-                            <div class="lte-rental-sc lte-limmo-white">
-                                <div class="lte-rental-list row centered lte-layout-car" style="width: calc(100% + 15px * 2)">
-                                    <div class="col-lg-4 col-md-6 col-sm-6">
-                                        <article class="lte-rental-item">
-                                            <a href="https://viptriponline.ru/product/arenda-hongqi-e-hs9-v-sochi" class="lte-photo">
-                                                <img width="1000" height="667" src="https://viptriponline.ru/wp-content/uploads/2019/06/ehs9_general.jpg?v=1693940007" class="attachment-limme-gallery-big size-limme-gallery-big" alt="" decoding="async" srcset="https://viptriponline.ru/wp-content/uploads/2019/06/ehs9_general.jpg?v=1693940007 1000w, https://viptriponline.ru/wp-content/uploads/2019/06/ehs9_general-300x200.jpg?v=1693940007 300w, https://viptriponline.ru/wp-content/uploads/2019/06/ehs9_general-768x512.jpg?v=1693940007 768w, https://viptriponline.ru/wp-content/uploads/2019/06/ehs9_general-800x534.jpg?v=1693940007 800w, https://viptriponline.ru/wp-content/uploads/2019/06/ehs9_general-480x320.jpg?v=1693940007 480w, https://viptriponline.ru/wp-content/uploads/2019/06/ehs9_general-600x400.jpg?v=1693940007 600w" sizes="(max-width: 1000px) 100vw, 1000px" />
-                                            </a>
-                                            <div class="lte-rental-inner">
-                                                <h5 class="lte-header">
-                                                    <a href="https://viptriponline.ru/product/arenda-hongqi-e-hs9-v-sochi">Аренда Hongqi E-HS9 в Сочи с водителем</a>
-                                                </h5>
-                                                <ul class="lte-icons-tags">
-                                                    <li>
-                                                        <img width="27" height="27" src="https://viptriponline.ru/wp-content/uploads/2022/07/safety-seat-car-svgrepo-com.svg" class="attachment-27x27 size-27x27" alt="" decoding="async" /> <span class="lte-icon icon"></span>
-                                                        Светлый
-                                                    </li>
-                                                    <li>
-                                                        <img width="27" height="27" src="https://viptriponline.ru/wp-content/uploads/2022/07/man-person.svg" class="attachment-27x27 size-27x27" alt="" decoding="async" /> <span class="lte-icon icon"></span>
-                                                        3 персоны
-                                                    </li>
-                                                    <li>
-                                                        <img width="27" height="27" src="https://viptriponline.ru/wp-content/uploads/2022/07/luggage-svgrepo-com.svg" class="attachment-27x27 size-27x27" alt="" decoding="async" /> <span class="lte-icon icon"></span>
-                                                        2 места
-                                                    </li>
-                                                </ul>
-                                                <div class="lte-rental-footer">
-                                                    <div class="lte-rental-variation">
-                                                        <div class="lte-rental-variation__item">
-                                                            <div class="lte-rental-variation__label">Почасовая аренда</div>
-                                                            <div class="lte-rental-variation__value"><span class="price"><span class="woocommerce-Price-amount amount"><bdi>5 000&nbsp;<span class="woocommerce-Price-currencySymbol">&#8381;</span></bdi></span></span></div>
-                                                        </div>
-                                                        <div class="lte-rental-variation__item">
-                                                            <div class="lte-rental-variation__label">Посуточная аренда</div>
-                                                            <div class="lte-rental-variation__value"><span class="price"><span class="woocommerce-Price-amount amount"><bdi>50 000&nbsp;<span class="woocommerce-Price-currencySymbol">&#8381;</span></bdi></span></span></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <a href="https://viptriponline.ru/product/arenda-hongqi-e-hs9-v-sochi" class="lte-btn btn-lg">
-                                                    <span class="lte-btn-inner">
-                                                        <span class="lte-btn-before"></span>Рассчитать цену и заказать<span class="lte-btn-after"></span></span>
-                                                </a>
-                                            </div>
-                                        </article>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6 col-sm-6">
-                                        <article class="lte-rental-item">
-                                            <a href="https://viptriponline.ru/product/arenda-maybach-x222-v-sochi" class="lte-photo">
-                                                <img width="1000" height="667" src="https://viptriponline.ru/wp-content/uploads/2019/06/maybach_general.jpg?v=1666795957" class="attachment-limme-gallery-big size-limme-gallery-big" alt="" decoding="async" srcset="https://viptriponline.ru/wp-content/uploads/2019/06/maybach_general.jpg?v=1666795957 1000w, https://viptriponline.ru/wp-content/uploads/2019/06/maybach_general-300x200.jpg?v=1666795957 300w, https://viptriponline.ru/wp-content/uploads/2019/06/maybach_general-768x512.jpg?v=1666795957 768w, https://viptriponline.ru/wp-content/uploads/2019/06/maybach_general-800x534.jpg?v=1666795957 800w, https://viptriponline.ru/wp-content/uploads/2019/06/maybach_general-480x320.jpg?v=1666795957 480w, https://viptriponline.ru/wp-content/uploads/2019/06/maybach_general-600x400.jpg?v=1666795957 600w" sizes="(max-width: 1000px) 100vw, 1000px" /> </a>
-                                            <div class="lte-rental-inner">
-                                                <h5 class="lte-header">
-                                                    <a href="https://viptriponline.ru/product/arenda-maybach-x222-v-sochi">Аренда Maybach X222 в Сочи</a>
-                                                </h5>
-                                                <ul class="lte-icons-tags">
-                                                    <li>
-                                                        <img width="27" height="27" src="https://viptriponline.ru/wp-content/uploads/2022/07/safety-seat-car-svgrepo-com.svg" class="attachment-27x27 size-27x27" alt="" decoding="async" /> <span class="lte-icon icon"></span>
-                                                        Светлый
-                                                    </li>
-                                                    <li>
-                                                        <img width="27" height="27" src="https://viptriponline.ru/wp-content/uploads/2022/07/man-person.svg" class="attachment-27x27 size-27x27" alt="" decoding="async" /> <span class="lte-icon icon"></span>
-                                                        3 персоны
-                                                    </li>
-                                                    <li>
-                                                        <img width="27" height="27" src="https://viptriponline.ru/wp-content/uploads/2022/07/luggage-svgrepo-com.svg" class="attachment-27x27 size-27x27" alt="" decoding="async" /> <span class="lte-icon icon"></span>
-                                                        1 место
-                                                    </li>
-                                                </ul>
-                                                <div class="lte-rental-footer">
-                                                    <div class="lte-rental-variation">
-                                                        <div class="lte-rental-variation__item">
-                                                            <div class="lte-rental-variation__label">Почасовая аренда</div>
-                                                            <div class="lte-rental-variation__value"><span class="price"><span class="woocommerce-Price-amount amount"><bdi>5 000&nbsp;<span class="woocommerce-Price-currencySymbol">&#8381;</span></bdi></span></span></div>
-                                                        </div>
-                                                        <div class="lte-rental-variation__item">
-                                                            <div class="lte-rental-variation__label">Посуточная аренда</div>
-                                                            <div class="lte-rental-variation__value"><span class="price"><span class="woocommerce-Price-amount amount"><bdi>40 000&nbsp;<span class="woocommerce-Price-currencySymbol">&#8381;</span></bdi></span></span></div>
-                                                        </div>
-                                                        <div class="lte-rental-variation__item">
-                                                            <div class="lte-rental-variation__label">Трансфер</div>
-                                                            <div class="lte-rental-variation__value"><span class="price"><span class="woocommerce-Price-amount amount"><bdi>5 000&nbsp;<span class="woocommerce-Price-currencySymbol">&#8381;</span></bdi></span></span></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <a href="https://viptriponline.ru/product/arenda-maybach-x222-v-sochi" class="lte-btn btn-lg">
-                                                    <span class="lte-btn-inner">
-                                                        <span class="lte-btn-before"></span>Рассчитать цену и заказать<span class="lte-btn-after"></span></span>
-                                                </a>
-                                            </div>
-                                        </article>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6 col-sm-6">
-                                        <article class="lte-rental-item">
-                                            <a href="https://viptriponline.ru/product/arenda-mercedes-w223-v-sochi" class="lte-photo">
-                                                <img width="1000" height="667" src="https://viptriponline.ru/wp-content/uploads/2019/06/w223_general.jpg?v=1666795952" class="attachment-limme-gallery-big size-limme-gallery-big" alt="" decoding="async" srcset="https://viptriponline.ru/wp-content/uploads/2019/06/w223_general.jpg?v=1666795952 1000w, https://viptriponline.ru/wp-content/uploads/2019/06/w223_general-300x200.jpg?v=1666795952 300w, https://viptriponline.ru/wp-content/uploads/2019/06/w223_general-768x512.jpg?v=1666795952 768w, https://viptriponline.ru/wp-content/uploads/2019/06/w223_general-800x534.jpg?v=1666795952 800w, https://viptriponline.ru/wp-content/uploads/2019/06/w223_general-480x320.jpg?v=1666795952 480w, https://viptriponline.ru/wp-content/uploads/2019/06/w223_general-600x400.jpg?v=1666795952 600w" sizes="(max-width: 1000px) 100vw, 1000px" /> </a>
-                                            <div class="lte-rental-inner">
-                                                <h5 class="lte-header">
-                                                    <a href="https://viptriponline.ru/product/arenda-mercedes-w223-v-sochi">Аренда Mercedes W223 в Сочи</a>
-                                                </h5>
-                                                <ul class="lte-icons-tags">
-                                                    <li>
-                                                        <img width="27" height="27" src="https://viptriponline.ru/wp-content/uploads/2022/07/safety-seat-car-svgrepo-com.svg" class="attachment-27x27 size-27x27" alt="" decoding="async" /> <span class="lte-icon icon"></span>
-                                                        Светлый
-                                                    </li>
-                                                    <li>
-                                                        <img width="27" height="27" src="https://viptriponline.ru/wp-content/uploads/2022/07/man-person.svg" class="attachment-27x27 size-27x27" alt="" decoding="async" /> <span class="lte-icon icon"></span>
-                                                        3 персоны
-                                                    </li>
-                                                    <li>
-                                                        <img width="27" height="27" src="https://viptriponline.ru/wp-content/uploads/2022/07/luggage-svgrepo-com.svg" class="attachment-27x27 size-27x27" alt="" decoding="async" /> <span class="lte-icon icon"></span>
-                                                        2 места
-                                                    </li>
-                                                </ul>
-                                                <div class="lte-rental-footer">
-                                                    <div class="lte-rental-variation">
-                                                        <div class="lte-rental-variation__item">
-                                                            <div class="lte-rental-variation__label">Почасовая аренда</div>
-                                                            <div class="lte-rental-variation__value"><span class="price"><span class="woocommerce-Price-amount amount"><bdi>5 000&nbsp;<span class="woocommerce-Price-currencySymbol">&#8381;</span></bdi></span></span></div>
-                                                        </div>
-                                                        <div class="lte-rental-variation__item">
-                                                            <div class="lte-rental-variation__label">Посуточная аренда</div>
-                                                            <div class="lte-rental-variation__value"><span class="price"><span class="woocommerce-Price-amount amount"><bdi>40 000&nbsp;<span class="woocommerce-Price-currencySymbol">&#8381;</span></bdi></span></span></div>
-                                                        </div>
-                                                        <div class="lte-rental-variation__item">
-                                                            <div class="lte-rental-variation__label">Трансфер</div>
-                                                            <div class="lte-rental-variation__value"><span class="price"><span class="woocommerce-Price-amount amount"><bdi>5 000&nbsp;<span class="woocommerce-Price-currencySymbol">&#8381;</span></bdi></span></span></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <a href="https://viptriponline.ru/product/arenda-mercedes-w223-v-sochi" class="lte-btn btn-lg">
-                                                    <span class="lte-btn-inner">
-                                                        <span class="lte-btn-before"></span>Рассчитать цену и заказать<span class="lte-btn-after"></span></span>
-                                                </a>
-                                            </div>
-                                        </article>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6 col-sm-6">
-                                        <article class="lte-rental-item">
-                                            <a href="https://viptriponline.ru/product/arenda-mercedes-w222-v-sochi" class="lte-photo">
-                                                <img width="1000" height="667" src="https://viptriponline.ru/wp-content/uploads/2019/06/w222_main.jpg?v=1666795931" class="attachment-limme-gallery-big size-limme-gallery-big" alt="" decoding="async" srcset="https://viptriponline.ru/wp-content/uploads/2019/06/w222_main.jpg?v=1666795931 1000w, https://viptriponline.ru/wp-content/uploads/2019/06/w222_main-300x200.jpg?v=1666795931 300w, https://viptriponline.ru/wp-content/uploads/2019/06/w222_main-768x512.jpg?v=1666795931 768w, https://viptriponline.ru/wp-content/uploads/2019/06/w222_main-800x534.jpg?v=1666795931 800w, https://viptriponline.ru/wp-content/uploads/2019/06/w222_main-480x320.jpg?v=1666795931 480w, https://viptriponline.ru/wp-content/uploads/2019/06/w222_main-600x400.jpg?v=1666795931 600w" sizes="(max-width: 1000px) 100vw, 1000px" /> </a>
-                                            <div class="lte-rental-inner">
-                                                <h5 class="lte-header">
-                                                    <a href="https://viptriponline.ru/product/arenda-mercedes-w222-v-sochi">Аренда Mercedes W222 в Сочи</a>
-                                                </h5>
-                                                <ul class="lte-icons-tags">
-                                                    <li>
-                                                        <img width="27" height="27" src="https://viptriponline.ru/wp-content/uploads/2022/07/safety-seat-car-svgrepo-com.svg" class="attachment-27x27 size-27x27" alt="" decoding="async" /> <span class="lte-icon icon"></span>
-                                                        Темный
-                                                    </li>
-                                                    <li>
-                                                        <img width="27" height="27" src="https://viptriponline.ru/wp-content/uploads/2022/07/man-person.svg" class="attachment-27x27 size-27x27" alt="" decoding="async" /> <span class="lte-icon icon"></span>
-                                                        3 персоны
-                                                    </li>
-                                                    <li>
-                                                        <img width="27" height="27" src="https://viptriponline.ru/wp-content/uploads/2022/07/luggage-svgrepo-com.svg" class="attachment-27x27 size-27x27" alt="" decoding="async" /> <span class="lte-icon icon"></span>
-                                                        2 места
-                                                    </li>
-                                                </ul>
-                                                <div class="lte-rental-footer">
-                                                    <div class="lte-rental-variation">
-                                                        <div class="lte-rental-variation__item">
-                                                            <div class="lte-rental-variation__label">Почасовая аренда</div>
-                                                            <div class="lte-rental-variation__value"><span class="price"><span class="woocommerce-Price-amount amount"><bdi>3 500&nbsp;<span class="woocommerce-Price-currencySymbol">&#8381;</span></bdi></span></span></div>
-                                                        </div>
-                                                        <div class="lte-rental-variation__item">
-                                                            <div class="lte-rental-variation__label">Посуточная аренда</div>
-                                                            <div class="lte-rental-variation__value"><span class="price"><span class="woocommerce-Price-amount amount"><bdi>30 000&nbsp;<span class="woocommerce-Price-currencySymbol">&#8381;</span></bdi></span></span></div>
-                                                        </div>
-                                                        <div class="lte-rental-variation__item">
-                                                            <div class="lte-rental-variation__label">Трансфер</div>
-                                                            <div class="lte-rental-variation__value"><span class="price"><span class="woocommerce-Price-amount amount"><bdi>4 000&nbsp;<span class="woocommerce-Price-currencySymbol">&#8381;</span></bdi></span></span></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <a href="https://viptriponline.ru/product/arenda-mercedes-w222-v-sochi" class="lte-btn btn-lg">
-                                                    <span class="lte-btn-inner">
-                                                        <span class="lte-btn-before"></span>Рассчитать цену и заказать<span class="lte-btn-after"></span></span>
-                                                </a>
-                                            </div>
-                                        </article>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6 col-sm-6">
-                                        <article class="lte-rental-item">
-                                            <a href="https://viptriponline.ru/product/arenda-hongqi-h9-v-sochi" class="lte-photo">
-                                                <img width="1000" height="667" src="https://viptriponline.ru/wp-content/uploads/2019/06/h9_general.jpg?v=1693936983" class="attachment-limme-gallery-big size-limme-gallery-big" alt="" decoding="async" srcset="https://viptriponline.ru/wp-content/uploads/2019/06/h9_general.jpg?v=1693936983 1000w, https://viptriponline.ru/wp-content/uploads/2019/06/h9_general-300x200.jpg?v=1693936983 300w, https://viptriponline.ru/wp-content/uploads/2019/06/h9_general-768x512.jpg?v=1693936983 768w, https://viptriponline.ru/wp-content/uploads/2019/06/h9_general-800x534.jpg?v=1693936983 800w, https://viptriponline.ru/wp-content/uploads/2019/06/h9_general-480x320.jpg?v=1693936983 480w, https://viptriponline.ru/wp-content/uploads/2019/06/h9_general-600x400.jpg?v=1693936983 600w" sizes="(max-width: 1000px) 100vw, 1000px" /> </a>
-                                            <div class="lte-rental-inner">
-                                                <h5 class="lte-header">
-                                                    <a href="https://viptriponline.ru/product/arenda-hongqi-h9-v-sochi">Аренда Hongqi H9 с водителем в Сочи</a>
-                                                </h5>
-                                                <ul class="lte-icons-tags">
-                                                    <li>
-                                                        <img width="27" height="27" src="https://viptriponline.ru/wp-content/uploads/2022/07/safety-seat-car-svgrepo-com.svg" class="attachment-27x27 size-27x27" alt="" decoding="async" /> <span class="lte-icon icon"></span>
-                                                        Рыжий
-                                                    </li>
-                                                    <li>
-                                                        <img width="27" height="27" src="https://viptriponline.ru/wp-content/uploads/2022/07/man-person.svg" class="attachment-27x27 size-27x27" alt="" decoding="async" /> <span class="lte-icon icon"></span>
-                                                        3 персоны
-                                                    </li>
-                                                    <li>
-                                                        <img width="27" height="27" src="https://viptriponline.ru/wp-content/uploads/2022/07/luggage-svgrepo-com.svg" class="attachment-27x27 size-27x27" alt="" decoding="async" /> <span class="lte-icon icon"></span>
-                                                        2 места
-                                                    </li>
-                                                </ul>
-                                                <div class="lte-rental-footer">
-                                                    <div class="lte-rental-variation">
-                                                        <div class="lte-rental-variation__item">
-                                                            <div class="lte-rental-variation__label">Почасовая аренда</div>
-                                                            <div class="lte-rental-variation__value"><span class="price"><span class="woocommerce-Price-amount amount"><bdi>3 000&nbsp;<span class="woocommerce-Price-currencySymbol">&#8381;</span></bdi></span></span></div>
-                                                        </div>
-                                                        <div class="lte-rental-variation__item">
-                                                            <div class="lte-rental-variation__label">Посуточная аренда</div>
-                                                            <div class="lte-rental-variation__value"><span class="price"><span class="woocommerce-Price-amount amount"><bdi>25 000&nbsp;<span class="woocommerce-Price-currencySymbol">&#8381;</span></bdi></span></span></div>
-                                                        </div>
-                                                        <div class="lte-rental-variation__item">
-                                                            <div class="lte-rental-variation__label">Трансфер</div>
-                                                            <div class="lte-rental-variation__value"><span class="price"><span class="woocommerce-Price-amount amount"><bdi>3 500&nbsp;<span class="woocommerce-Price-currencySymbol">&#8381;</span></bdi></span></span></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <a href="https://viptriponline.ru/product/arenda-hongqi-h9-v-sochi" class="lte-btn btn-lg">
-                                                    <span class="lte-btn-inner">
-                                                        <span class="lte-btn-before"></span>Рассчитать цену и заказать<span class="lte-btn-after"></span></span>
-                                                </a>
-                                            </div>
-                                        </article>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6 col-sm-6">
-                                        <article class="lte-rental-item">
-                                            <a href="https://viptriponline.ru/product/arenda-mikroavtobusa-mercedes-v-klassa-v-sochi" class="lte-photo">
-                                                <img width="1000" height="667" src="https://viptriponline.ru/wp-content/uploads/2019/06/vclass_general.jpg?v=1666795942" class="attachment-limme-gallery-big size-limme-gallery-big" alt="" decoding="async" srcset="https://viptriponline.ru/wp-content/uploads/2019/06/vclass_general.jpg?v=1666795942 1000w, https://viptriponline.ru/wp-content/uploads/2019/06/vclass_general-300x200.jpg?v=1666795942 300w, https://viptriponline.ru/wp-content/uploads/2019/06/vclass_general-768x512.jpg?v=1666795942 768w, https://viptriponline.ru/wp-content/uploads/2019/06/vclass_general-800x534.jpg?v=1666795942 800w, https://viptriponline.ru/wp-content/uploads/2019/06/vclass_general-480x320.jpg?v=1666795942 480w, https://viptriponline.ru/wp-content/uploads/2019/06/vclass_general-600x400.jpg?v=1666795942 600w" sizes="(max-width: 1000px) 100vw, 1000px" /> </a>
-                                            <div class="lte-rental-inner">
-                                                <h5 class="lte-header">
-                                                    <a href="https://viptriponline.ru/product/arenda-mikroavtobusa-mercedes-v-klassa-v-sochi">Аренда микроавтобуса Mercedes V-класса в Сочи</a>
-                                                </h5>
-                                                <ul class="lte-icons-tags">
-                                                    <li>
-                                                        <img width="27" height="27" src="https://viptriponline.ru/wp-content/uploads/2022/07/safety-seat-car-svgrepo-com.svg" class="attachment-27x27 size-27x27" alt="" decoding="async" /> <span class="lte-icon icon"></span>
-                                                        Темный
-                                                    </li>
-                                                    <li>
-                                                        <img width="27" height="27" src="https://viptriponline.ru/wp-content/uploads/2022/07/man-person.svg" class="attachment-27x27 size-27x27" alt="" decoding="async" /> <span class="lte-icon icon"></span>
-                                                        6 персон
-                                                    </li>
-                                                    <li>
-                                                        <img width="27" height="27" src="https://viptriponline.ru/wp-content/uploads/2022/07/luggage-svgrepo-com.svg" class="attachment-27x27 size-27x27" alt="" decoding="async" /> <span class="lte-icon icon"></span>
-                                                        5 мест
-                                                    </li>
-                                                </ul>
-                                                <div class="lte-rental-footer">
-                                                    <div class="lte-rental-variation">
-                                                        <div class="lte-rental-variation__item">
-                                                            <div class="lte-rental-variation__label">Почасовая аренда</div>
-                                                            <div class="lte-rental-variation__value"><span class="price"><span class="woocommerce-Price-amount amount"><bdi>3 000&nbsp;<span class="woocommerce-Price-currencySymbol">&#8381;</span></bdi></span></span></div>
-                                                        </div>
-                                                        <div class="lte-rental-variation__item">
-                                                            <div class="lte-rental-variation__label">Посуточная аренда</div>
-                                                            <div class="lte-rental-variation__value"><span class="price"><span class="woocommerce-Price-amount amount"><bdi>25 000&nbsp;<span class="woocommerce-Price-currencySymbol">&#8381;</span></bdi></span></span></div>
-                                                        </div>
-                                                        <div class="lte-rental-variation__item">
-                                                            <div class="lte-rental-variation__label">Трансфер</div>
-                                                            <div class="lte-rental-variation__value"><span class="price"><span class="woocommerce-Price-amount amount"><bdi>3 500&nbsp;<span class="woocommerce-Price-currencySymbol">&#8381;</span></bdi></span></span></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <a href="https://viptriponline.ru/product/arenda-mikroavtobusa-mercedes-v-klassa-v-sochi" class="lte-btn btn-lg">
-                                                    <span class="lte-btn-inner">
-                                                        <span class="lte-btn-before"></span>Рассчитать цену и заказать<span class="lte-btn-after"></span></span>
-                                                </a>
-                                            </div>
-                                        </article>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6 col-sm-6">
-                                        <article class="lte-rental-item">
-                                            <a href="https://viptriponline.ru/product/arenda-yahty-v-sochi-i-adlere" class="lte-photo">
-                                                <img width="1000" height="667" src="https://viptriponline.ru/wp-content/uploads/2019/06/santa_lucia_main.jpg?v=1695144077" class="attachment-limme-gallery-big size-limme-gallery-big" alt="" decoding="async" srcset="https://viptriponline.ru/wp-content/uploads/2019/06/santa_lucia_main.jpg?v=1695144077 1000w, https://viptriponline.ru/wp-content/uploads/2019/06/santa_lucia_main-300x200.jpg?v=1695144077 300w, https://viptriponline.ru/wp-content/uploads/2019/06/santa_lucia_main-768x512.jpg?v=1695144077 768w, https://viptriponline.ru/wp-content/uploads/2019/06/santa_lucia_main-800x534.jpg?v=1695144077 800w, https://viptriponline.ru/wp-content/uploads/2019/06/santa_lucia_main-480x320.jpg?v=1695144077 480w, https://viptriponline.ru/wp-content/uploads/2019/06/santa_lucia_main-600x400.jpg?v=1695144077 600w" sizes="(max-width: 1000px) 100vw, 1000px" /> </a>
-                                            <div class="lte-rental-inner">
-                                                <h5 class="lte-header">
-                                                    <a href="https://viptriponline.ru/product/arenda-yahty-v-sochi-i-adlere">Аренда яхты в Сочи и Адлере</a>
-                                                </h5>
-                                                <ul class="lte-icons-tags">
-                                                    <li>
-                                                        <img width="27" height="27" src="https://viptriponline.ru/wp-content/uploads/2022/07/man-person.svg" class="attachment-27x27 size-27x27" alt="" decoding="async" /> <span class="lte-icon icon"></span>
-                                                        10 гостей
-                                                    </li>
-                                                    <li>
-                                                        <img width="27" height="27" src="https://viptriponline.ru/wp-content/uploads/2019/06/yacht-svgrepo-com.svg" class="attachment-27x27 size-27x27" alt="" decoding="async" /> <span class="lte-icon icon"></span>
-                                                        22 м
-                                                    </li>
-                                                    <li>
-                                                        <img width="27" height="27" src="https://viptriponline.ru/wp-content/uploads/2019/06/fishing-svgrepo-com.svg" class="attachment-27x27 size-27x27" alt="" decoding="async" /> <span class="lte-icon icon"></span>
-                                                        рыбалка
-                                                    </li>
-                                                </ul>
-                                                <div class="lte-rental-footer">
-                                                    <div class="lte-rental-variation">
-                                                        <div class="lte-rental-variation__item">
-                                                            <div class="lte-rental-variation__label">Почасовая аренда</div>
-                                                            <div class="lte-rental-variation__value"><span class="price"><span class="woocommerce-Price-amount amount"><bdi>40 000&nbsp;<span class="woocommerce-Price-currencySymbol">&#8381;</span></bdi></span></span></div>
-                                                        </div>
-                                                        <div class="lte-rental-variation__item">
-                                                            <div class="lte-rental-variation__label">Посуточная аренда</div>
-                                                            <div class="lte-rental-variation__value"><span class="price"><span class="woocommerce-Price-amount amount"><bdi>550 000&nbsp;<span class="woocommerce-Price-currencySymbol">&#8381;</span></bdi></span></span></div>
-                                                        </div>
-                                                        <div class="lte-rental-variation__item">
-                                                            <div class="lte-rental-variation__label">Трансфер</div>
-                                                            <div class="lte-rental-variation__value"><span class="price"><span class="woocommerce-Price-amount amount"><bdi>150 000&nbsp;<span class="woocommerce-Price-currencySymbol">&#8381;</span></bdi></span></span></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <a href="https://viptriponline.ru/product/arenda-yahty-v-sochi-i-adlere" class="lte-btn btn-lg">
-                                                    <span class="lte-btn-inner">
-                                                        <span class="lte-btn-before"></span>Рассчитать цену и заказать<span class="lte-btn-after"></span></span>
-                                                </a>
-                                            </div>
-                                        </article>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6 col-sm-6">
-                                        <article class="lte-rental-item">
-                                            <a href="https://viptriponline.ru/product/arenda-vertoleta-v-sochi-i-na-krasnoj-polyane" class="lte-photo">
-                                                <img width="1000" height="667" src="https://viptriponline.ru/wp-content/uploads/2019/06/eurocopter_ec130_main.jpg?v=1695144555" class="attachment-limme-gallery-big size-limme-gallery-big" alt="" decoding="async" srcset="https://viptriponline.ru/wp-content/uploads/2019/06/eurocopter_ec130_main.jpg?v=1695144555 1000w, https://viptriponline.ru/wp-content/uploads/2019/06/eurocopter_ec130_main-300x200.jpg?v=1695144555 300w, https://viptriponline.ru/wp-content/uploads/2019/06/eurocopter_ec130_main-768x512.jpg?v=1695144555 768w, https://viptriponline.ru/wp-content/uploads/2019/06/eurocopter_ec130_main-800x534.jpg?v=1695144555 800w, https://viptriponline.ru/wp-content/uploads/2019/06/eurocopter_ec130_main-480x320.jpg?v=1695144555 480w, https://viptriponline.ru/wp-content/uploads/2019/06/eurocopter_ec130_main-600x400.jpg?v=1695144555 600w" sizes="(max-width: 1000px) 100vw, 1000px" /> </a>
-                                            <div class="lte-rental-inner">
-                                                <h5 class="lte-header">
-                                                    <a href="https://viptriponline.ru/product/arenda-vertoleta-v-sochi-i-na-krasnoj-polyane">Аренда вертолета в Сочи и на Красной поляне</a>
-                                                </h5>
-                                                <ul class="lte-icons-tags">
-                                                    <li>
-                                                        <img width="27" height="27" src="https://viptriponline.ru/wp-content/uploads/2022/07/luggage-svgrepo-com.svg" class="attachment-27x27 size-27x27" alt="" decoding="async" /> <span class="lte-icon icon"></span>
-                                                        1,37 м
-                                                    </li>
-                                                    <li>
-                                                        <img width="27" height="27" src="https://viptriponline.ru/wp-content/uploads/2022/07/man-person.svg" class="attachment-27x27 size-27x27" alt="" decoding="async" /> <span class="lte-icon icon"></span>
-                                                        6 персон
-                                                    </li>
-                                                    <li>
-                                                        <img width="27" height="27" src="https://viptriponline.ru/wp-content/uploads/2019/06/camera-svgrepo-com.svg" class="attachment-27x27 size-27x27" alt="" decoding="async" /> <span class="lte-icon icon"></span>
-                                                        фотосъемка
-                                                    </li>
-                                                </ul>
-                                                <div class="lte-rental-footer">
-                                                    <div class="lte-rental-variation">
-                                                        <div class="lte-rental-variation__item">
-                                                            <div class="lte-rental-variation__label">Трансфер</div>
-                                                            <div class="lte-rental-variation__value"><span class="price"><span class="woocommerce-Price-amount amount"><bdi>110 000&nbsp;<span class="woocommerce-Price-currencySymbol">&#8381;</span></bdi></span></span></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <a href="https://viptriponline.ru/product/arenda-vertoleta-v-sochi-i-na-krasnoj-polyane" class="lte-btn btn-lg">
-                                                    <span class="lte-btn-inner">
-                                                        <span class="lte-btn-before"></span>Рассчитать цену и заказать<span class="lte-btn-after"></span></span>
-                                                </a>
-                                            </div>
-                                        </article>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section> -->
-                    <!--Cars - end-->
-
                     <!--Animated limo-->
-                    <!-- <section class="main-page-limo" style="background-image: url(https://viptriponline.ru/wp-content/uploads/2020/11/about-sky.png);">
+                    <section class="main-page-limo" style="background-image: url(https://viptriponline.ru/wp-content/uploads/2020/11/about-sky.png);">
                         <div class="main-page-limo__container">
                             <div class="main-page-limo__text">
                                 <div class="lte-heading lte-style-italic heading-tag-h5 heading-subtag-h6">
@@ -597,7 +256,7 @@
                         <div class="main-page-limo__car js-animatedScroll">
                             <img width="1535" height="520" src="https://viptriponline.ru/wp-content/uploads/2019/06/maybach_driving.png" class="attachment-full size-full" alt="" decoding="async" srcset="https://viptriponline.ru/wp-content/uploads/2019/06/maybach_driving.png 1535w, https://viptriponline.ru/wp-content/uploads/2019/06/maybach_driving-300x102.png 300w, https://viptriponline.ru/wp-content/uploads/2019/06/maybach_driving-1024x347.png 1024w, https://viptriponline.ru/wp-content/uploads/2019/06/maybach_driving-768x260.png 768w, https://viptriponline.ru/wp-content/uploads/2019/06/maybach_driving-800x271.png 800w, https://viptriponline.ru/wp-content/uploads/2019/06/maybach_driving-480x163.png 480w, https://viptriponline.ru/wp-content/uploads/2019/06/maybach_driving-600x203.png 600w" sizes="(max-width: 1535px) 100vw, 1535px" />
                         </div>
-                    </section> -->
+                    </section>
 
                     <!--Animated limo - end-->
                     <!--Options-->

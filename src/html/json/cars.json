@@ -1,0 +1,79 @@
+[
+    {
+        "image": "@img/cars/ehs9_general.jpg",
+        "name": "Аренда Hongqi E-HS9 в Сочи с водителем",
+        "salon": "Светлый",
+        "persons": "3 персоны",
+        "places": "2 места",
+        "pricePerHour": "5 000 ₽",
+        "pricePerDay": "50 000 ₽"
+    },
+    {
+        "image": "@img/cars/maybach_general.jpg",
+        "name": "Аренда Maybach X222 в Сочи",
+        "salon": "Светлый",
+        "persons": "3 персоны",
+        "places": "1 место",
+        "pricePerHour": "5 000 ₽",
+        "pricePerDay": "40 000 ₽",
+        "pricePerTransfer": "5 000 ₽"
+    },
+    {
+        "image": "@img/cars/maybach_general.jpg",
+        "name": "Аренда Mercedes W223 в Сочи",
+        "salon": "Светлый",
+        "persons": "3 персоны",
+        "places": "2 места",
+        "pricePerHour": "5 000 ₽",
+        "pricePerDay": "40 000 ₽",
+        "pricePerTransfer": "5 000 ₽"
+    },
+    {
+        "image": "@img/cars/w222_main-768x512.jpg",
+        "name": "Аренда Mercedes W222 в Сочи",
+        "salon": "Темный",
+        "persons": "3 персоны",
+        "places": "2 места",
+        "pricePerHour": "3 500 ₽",
+        "pricePerDay": "30 000 ₽",
+        "pricePerTransfer": "4 000 ₽"
+    },
+    {
+        "image": "@img/cars/h9_general-768x512.jpg",
+        "name": "Аренда Hongqi H9 с водителем в Сочи",
+        "salon": "Рыжий",
+        "persons": "3 персоны",
+        "places": "2 места",
+        "pricePerHour": "3 000 ₽",
+        "pricePerDay": "25 000 ₽",
+        "pricePerTransfer": "3 500 ₽"
+    },
+    {
+        "image": "@img/cars/vclass_general-768x512.jpg",
+        "name": "Аренда микроавтобуса Mercedes V-класса в Сочи",
+        "salon": "Темный",
+        "persons": "6 персон",
+        "places": "5 мест",
+        "pricePerHour": "3 000 ₽",
+        "pricePerDay": "25 000 ₽",
+        "pricePerTransfer": "3 500 ₽"
+    },
+    {
+        "image": "@img/cars/santa_lucia_main-768x512.jpg",
+        "name": "Аренда яхты в Сочи и Адлере",
+        "persons": "10 гостей",
+        "width": "22 м",
+        "fish": "рыбалка",
+        "pricePerHour": "40 000 ₽",
+        "pricePerDay": "550 000 ₽",
+        "pricePerTransfer": "150 000 ₽"
+    },
+    {
+        "image": "@img/cars/eurocopter_ec130_main-768x512.jpg",
+        "name": "Аренда вертолета в Сочи и на Красной поляне",
+        "luggage": "1,37 м",
+        "persons": "6 персон",
+        "photo": "фотосъемка",
+        "pricePerTransfer": "110 000 ₽"
+    }
+]

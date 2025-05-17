@@ -7,37 +7,83 @@
             <h5 class="car__name">
                 <a href="" class="car__name-link">@@name</a>
             </h5>
-            <ul class="car__props row">
-                <li class="col-4">
-                    <div class="car__props-column">
-                        <div class="car__props-icon"></div>
-                        <div class="car__props-value">@@salon</div>
+            <ul class="car__props">
+                @@if(typeof luggage !== 'undefined') {
+                <li class="car__props-column">
+                    <div class="car__props-icon">
+                        <img src="@img/icons/luggage.svg" alt="Иконка">
                     </div>
+                    <div class="car__props-value">@@luggage</div>
                 </li>
-                <li class="col-4">
-                    <div class="car__props-column">
-                        <div class="car__props-icon"></div>
-                        <div class="car__props-value">@@persons</div>
+                }
+                @@if(typeof salon !== 'undefined') {
+                <li class="car__props-column">
+                    <div class="car__props-icon">
+                        <img src="@img/icons/safety-seat-car.svg" alt="Иконка">
                     </div>
+                    <div class="car__props-value">@@salon</div>
                 </li>
-                <li class="col-4">
-                    <div class="car__props-column">
-                        <div class="car__props-icon"></div>
-                        <div class="car__props-value">@@places</div>
+                }
+                <li class="car__props-column">
+                    <div class="car__props-icon">
+                        <img src="@img/icons/man-person.svg" alt="Иконка">
                     </div>
+                    <div class="car__props-value">@@persons</div>
                 </li>
+                @@if(typeof places !== 'undefined') {
+                <li class="car__props-column">
+                    <div class="car__props-icon">
+                        <img src="@img/icons/luggage.svg" alt="Иконка">
+                    </div>
+                    <div class="car__props-value">@@places</div>
+                </li>
+                }
+                @@if(typeof width !== 'undefined') {
+                <li class="car__props-column">
+                    <div class="car__props-icon">
+                        <img src="@img/icons/yacht.svg" alt="Иконка">
+                    </div>
+                    <div class="car__props-value">@@width</div>
+                </li>
+                }
+                @@if(typeof fish !== 'undefined') {
+                <li class="car__props-column">
+                    <div class="car__props-icon">
+                        <img src="@img/icons/fishing.svg" alt="Иконка">
+                    </div>
+                    <div class="car__props-value">@@fish</div>
+                </li>
+                }
+                @@if(typeof photo !== 'undefined') {
+                <li class="car__props-column">
+                    <div class="car__props-icon">
+                        <img src="@img/icons/camera.svg" alt="Иконка">
+                    </div>
+                    <div class="car__props-value">@@photo</div>
+                </li>
+                }
             </ul>
+            <ul class="car__price">
+                @@if(typeof pricePerHour !== 'undefined') {
+                <li class="car__price-row">
+                    <div class="car__price-time">Почасовая аренда</div>
+                    <div class="car__price-value">@@pricePerHour</div>
+                </li>
+                }
+                @@if(typeof pricePerDay !== 'undefined') {
+                <li class="car__price-row">
+                    <div class="car__price-time">Посуточная аренда</div>
+                    <div class="car__price-value">@@pricePerDay</div>
+                </li>
+                }
+                @@if(typeof pricePerTransfer !== 'undefined') {
+                <li class="car__price-row">
+                    <div class="car__price-time">Трансфер</div>
+                    <div class="car__price-value">@@pricePerTransfer</div>
+                </li>
+                }
+            </ul>
+            <a href="" class="car__btn btn btn-primary icon-right">Рассчитать цену и заказать</a>
         </div>
-        <ul class="car__price">
-            <li class="car__price-row">
-                <div class="car__price-time">Почасовая аренда</div>
-                <div class="car__price-value">@@price-per-hour</div>
-            </li>
-            <li class="car__price-row">
-                <div class="car__price-time">Посуточная аренда</div>
-                <div class="car__price-value">@@price-per-day</div>
-            </li>
-        </ul>
-        <a href="" class="car__btn btn btn-primary">Рассчитать цену и заказать</a>
     </div>
 </div>

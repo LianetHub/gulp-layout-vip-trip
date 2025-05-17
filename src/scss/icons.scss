@@ -18,6 +18,27 @@
 	}
 }
 
+.icon-clock:before {
+	content: "\e90c";
+}
+.icon-calendar:before {
+	content: "\e906";
+}
+.icon-car:before {
+	content: "\e907";
+}
+.icon-down:before {
+	content: "\e908";
+}
+.icon-location:before {
+	content: "\e909";
+}
+.icon-person:before {
+	content: "\e90a";
+}
+.icon-users:before {
+	content: "\e90b";
+}
 .icon-right:before {
 	content: "\e905";
 }
