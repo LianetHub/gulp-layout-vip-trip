@@ -354,6 +354,10 @@
 				color: #192026;
 			}
 		}
+		&.active {
+			color: #d7b65d;
+			pointer-events: none;
+		}
 	}
 }
 

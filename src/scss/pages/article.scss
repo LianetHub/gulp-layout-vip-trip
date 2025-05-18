@@ -36,8 +36,40 @@
 	}
 	p {
 		font-size: 18px;
-		margin-bottom: 30px;
 		line-height: 170%;
+		&:not(:last-child) {
+			margin-bottom: 30px;
+		}
+		& + ul {
+			margin-top: -10px;
+		}
+	}
+	ul {
+		line-height: 170%;
+		padding-left: 40px;
+		list-style: disc;
+		&:not(:last-child) {
+			margin-bottom: 16px;
+		}
+		& li {
+			&:not(:last-child) {
+				margin-bottom: 6px;
+			}
+		}
+	}
+	ol {
+		line-height: 170%;
+		padding-left: 30px;
+		list-style: decimal;
+		&:not(:last-child) {
+			margin-bottom: 16px;
+		}
+		& li {
+			padding-left: 10px;
+			&:not(:last-child) {
+				margin-bottom: 6px;
+			}
+		}
 	}
 	blockquote {
 		&::before {

@@ -10,11 +10,11 @@
             <nav class="header__menu menu">
                 <ul class="menu__list">
                     <li class="menu__item">
-                        <a href="#" class="menu__link icon-chevron">Компания</a>
+                        <a href="#" class="menu__link icon-chevron @@if(typeof active !== 'undefined' && (active === 1 || active === 2 || active === 3) ){ active}">Компания</a>
                         <ul class="submenu">
-                            <li class="submenu__item"><a href="/about.html" class="submenu__link">О нас</a></li>
-                            <li class="submenu__item"><a href="/program.html" class="submenu__link">Программа лояльности</a></li>
-                            <li class="submenu__item"><a href="" class="submenu__link">Деловое сотрудничество</a></li>
+                            <li class="submenu__item"><a href="/about.html" class="submenu__link  @@if(typeof active !== 'undefined' && active === 1){ active}">О нас</a></li>
+                            <li class="submenu__item"><a href="/program.html" class="submenu__link  @@if(typeof active !== 'undefined' && active === 2){ active}">Программа лояльности</a></li>
+                            <li class="submenu__item"><a href="/delovoe-sotrudnichestvo.html" class="submenu__link @@if(typeof active !== 'undefined' && active === 3){ active}">Деловое сотрудничество</a></li>
                         </ul>
                     </li>
                     <li class="menu__item">

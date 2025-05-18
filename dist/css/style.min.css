@@ -13134,6 +13134,10 @@ html .datepicker__day.is-otherMonth {
     color: #192026;
   }
 }
+.submenu__link.active {
+  color: #d7b65d;
+  pointer-events: none;
+}
 
 .icon-menu {
   flex-shrink: 0;
@@ -14198,8 +14202,38 @@ html .datepicker__day.is-otherMonth {
 }
 .article p {
   font-size: 18px;
-  margin-bottom: 30px;
   line-height: 170%;
+}
+.article p:not(:last-child) {
+  margin-bottom: 30px;
+}
+.article p + ul {
+  margin-top: -10px;
+}
+.article ul {
+  line-height: 170%;
+  padding-left: 40px;
+  list-style: disc;
+}
+.article ul:not(:last-child) {
+  margin-bottom: 16px;
+}
+.article ul li:not(:last-child) {
+  margin-bottom: 6px;
+}
+.article ol {
+  line-height: 170%;
+  padding-left: 30px;
+  list-style: decimal;
+}
+.article ol:not(:last-child) {
+  margin-bottom: 16px;
+}
+.article ol li {
+  padding-left: 10px;
+}
+.article ol li:not(:last-child) {
+  margin-bottom: 6px;
 }
 .article blockquote {
   padding: 40px 15px 60px;
