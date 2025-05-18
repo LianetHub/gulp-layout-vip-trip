@@ -12091,7 +12091,7 @@ input[type=number] {
   font-weight: 500;
   font-style: normal;
 }
-.promo__service-caption::before, .select2-container--default .select2-selection--single .select2-selection__arrow:before, .swiper-button-next,
+.article blockquote::before, .promo__service-caption::before, .select2-container--default .select2-selection--single .select2-selection__arrow:before, .swiper-button-next,
 .swiper-button-prev, [class^=icon-]:before,
 [class*=" icon-"]:before {
   font-family: "icons";
@@ -12110,7 +12110,7 @@ input[type=number] {
   display: block;
 }
 
-.icon-quotes:before {
+.icon-quotes:before, .article blockquote:before {
   content: "\e910";
 }
 
@@ -12364,7 +12364,7 @@ body.lock-menu {
   letter-spacing: -0.03125rem;
 }
 
-.title-xl {
+.title-xl, .article h1, .article .h1 {
   font-family: "STIXTwoText";
   font-size: 5rem;
   font-weight: 500;
@@ -12372,7 +12372,7 @@ body.lock-menu {
   letter-spacing: -0.03125rem;
 }
 
-.title-lg {
+.title-lg, .article h2, .article .h2 {
   font-family: "STIXTwoText";
   font-weight: 500;
   line-height: 115%;
@@ -12380,37 +12380,42 @@ body.lock-menu {
   font-size: 2.25rem;
 }
 @media (min-width: 991.98px) {
-  .title-lg {
+  .title-lg, .article h2, .article .h2 {
     font-size: 3rem;
   }
 }
 @media (min-width: 1469.98px) {
-  .title-lg {
+  .title-lg, .article h2, .article .h2 {
     font-size: 4rem;
   }
 }
 
-.title {
+.title, .article h3, .article .h3 {
   font-family: "STIXTwoText";
-  font-size: 3rem;
   font-weight: 500;
   line-height: 100%;
   letter-spacing: -0.03125rem;
+  font-size: 1.875rem;
+}
+@media (min-width: 991.98px) {
+  .title, .article h3, .article .h3 {
+    font-size: 3rem;
+  }
 }
 
-.title-md {
+.title-md, .article h4, .article .h4 {
   font-family: "STIXTwoText";
   line-height: 120%;
   letter-spacing: -0.03125rem;
   font-size: 1.875rem;
 }
 @media (min-width: 743.98px) {
-  .title-md {
+  .title-md, .article h4, .article .h4 {
     font-size: 2.5rem;
   }
 }
 
-.title-sm {
+.title-sm, .article h5, .article .h5 {
   font-family: "STIXTwoText";
   font-size: 2.25rem;
   font-weight: 500;
@@ -14136,7 +14141,7 @@ html .datepicker__day.is-otherMonth {
     font-size: 1.5rem;
   }
 }
-.driver__desc {
+.driver__desc, .article blockquote {
   margin-top: 1.87rem;
   border: 0.125rem solid #d7b65d;
   display: flex;
@@ -14148,13 +14153,65 @@ html .datepicker__day.is-otherMonth {
   padding: 1.375rem 1.375rem 2.63625rem 1.375rem;
 }
 @media (min-width: 743.98px) {
-  .driver__desc {
+  .driver__desc, .article blockquote {
     padding: 2rem;
   }
 }
-.driver__desc::before {
+.driver__desc::before, .article blockquote::before {
   align-self: center;
   font-size: 2rem;
   color: #d7b65d;
   margin-bottom: 1.44rem;
+}
+
+.article {
+  padding: 5rem 0 5.625rem;
+}
+@media (min-width: 991.98px) {
+  .article {
+    padding: 6.25rem 0 7.5rem;
+  }
+}
+.article h2, .article .h2 {
+  margin-bottom: 16px;
+}
+.article h2:not(:first-child), .article .h2:not(:first-child) {
+  margin-top: 80px;
+}
+.article h3, .article .h3 {
+  margin-bottom: 16px;
+}
+.article h3:not(:first-child), .article .h3:not(:first-child) {
+  margin-top: 64px;
+}
+.article h4, .article .h4 {
+  margin-bottom: 16px;
+}
+.article h4:not(:first-child), .article .h4:not(:first-child) {
+  margin-top: 42px;
+}
+.article h5, .article .h5 {
+  margin-bottom: 16px;
+}
+.article h5:not(:first-child), .article .h5:not(:first-child) {
+  margin-top: 32px;
+}
+.article p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  line-height: 170%;
+}
+.article blockquote {
+  padding: 40px 15px 60px;
+}
+@media (min-width: 1199.98px) {
+  .article blockquote {
+    padding: 40px 80px 60px;
+  }
+}
+.article blockquote p {
+  margin: auto;
+  text-align: center;
+  font-size: 24px;
+  font-style: italic;
 }

@@ -1,0 +1,58 @@
+.article {
+	padding: rem(80) 0 rem(90);
+	@media (min-width: $md3) {
+		padding: rem(100) 0 rem(120);
+	}
+	h1 {
+		@extend .title-xl;
+	}
+	h2 {
+		@extend .title-lg;
+		&:not(:first-child) {
+			margin-top: 80px;
+		}
+		margin-bottom: 16px;
+	}
+	h3 {
+		@extend .title;
+		&:not(:first-child) {
+			margin-top: 64px;
+		}
+		margin-bottom: 16px;
+	}
+	h4 {
+		@extend .title-md;
+		&:not(:first-child) {
+			margin-top: 42px;
+		}
+		margin-bottom: 16px;
+	}
+	h5 {
+		@extend .title-sm;
+		&:not(:first-child) {
+			margin-top: 32px;
+		}
+		margin-bottom: 16px;
+	}
+	p {
+		font-size: 18px;
+		margin-bottom: 30px;
+		line-height: 170%;
+	}
+	blockquote {
+		&::before {
+			@extend %ic, .icon-quotes;
+		}
+		@extend .driver__desc;
+		padding: 40px 15px 60px;
+		@media (min-width: $md2) {
+			padding: 40px 80px 60px;
+		}
+		& p {
+			margin: auto;
+			text-align: center;
+			font-size: 24px;
+			font-style: italic;
+		}
+	}
+}

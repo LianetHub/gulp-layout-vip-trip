@@ -33,10 +33,13 @@
 }
 .title {
 	font-family: $font-stix;
-	font-size: 3rem;
 	font-weight: 500;
 	line-height: 100%;
 	letter-spacing: -0.03125rem;
+	font-size: rem(30);
+	@media (min-width: $md3) {
+		font-size: 3rem;
+	}
 }
 .title-md {
 	font-family: $font-stix;
