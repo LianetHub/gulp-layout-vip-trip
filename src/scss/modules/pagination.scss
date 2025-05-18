@@ -1,13 +1,19 @@
 .pagination {
 	display: flex;
+	justify-content: center;
 	align-items: center;
-	@media (min-width: $md5) {
-		gap: 0.25rem;
+	&__list {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		@media (min-width: $md5) {
+			gap: 0.75rem;
+		}
 	}
-	// .pagination__item
-	&__item {
-		width: rem(31);
-		height: rem(31);
+	// .pagination__link
+	&__link {
+		width: rem(60);
+		height: rem(60);
 		font-size: rem(14);
 		font-weight: 500;
 		line-height: 150%;
@@ -15,14 +21,18 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		background: #f5f5f5;
 		transition: background-color 0.3s ease 0s;
 		&.active {
-			background: #c5d1e0;
+			background: #d7b65d;
+			color: #192026;
+			pointer-events: none;
 		}
 		&[href] {
 			@media (any-hover: hover) {
 				&:hover {
-					background: #f0f5fb;
+					background: #192026;
+					color: #fff;
 				}
 			}
 		}
@@ -30,7 +40,7 @@
 	// .pagination__next
 	&__next,
 	&__prev {
-		transition: color 0.3s ease 0s;
+		@extend .pagination__link;
 		& span {
 			display: none;
 			@media (min-width: $md4) {
@@ -41,6 +51,7 @@
 			pointer-events: none;
 			user-select: none;
 			opacity: 0.3;
+			display: none;
 		}
 		@media (any-hover: hover) {
 			&:hover {
@@ -49,15 +60,10 @@
 		}
 	}
 	&__prev {
-		margin-right: rem(26);
-		@media (min-width: $md4) {
-			margin-right: rem(46);
+		&::before {
+			transform: rotate(180deg);
 		}
 	}
 	&__next {
-		margin-left: rem(26);
-		@media (min-width: $md4) {
-			margin-left: rem(46);
-		}
 	}
 }

@@ -1,15 +1,19 @@
-<li class="blog__item">
+<li class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 blog__item">
     <div class="blog__item-header">
         <a href="" class="blog__item-image">
             <img src="@@image" class="cover-image" alt="Постер статьи">
         </a>
+        @@if(typeof datetime !== 'undefined') {
         <time datetime="@@datetime" class="blog__item-time">
             <span>@@day</span>
             @@time
         </time>
+        }
     </div>
     <div class="blog__item-body">
+        @@if(typeof views !== 'undefined') {
         <div class="blog__item-views icon-eye">@@views</div>
+        }
         <h3 class="blog__item-caption ">
             <a href="" class="blog__item-link">@@name</a>
         </h3>

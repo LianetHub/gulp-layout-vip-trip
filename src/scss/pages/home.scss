@@ -629,6 +629,7 @@
 	&__title {
 		position: relative;
 		padding-bottom: rem(14);
+		margin-bottom: 3.5rem;
 		&::before {
 			content: "";
 			width: rem(70);
@@ -651,11 +652,8 @@
 	}
 	// .blog__list
 	&__list {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		max-width: 60.5rem;
-		gap: 1.87rem;
-		margin: 3.5rem auto 0;
+		--bs-gutter-x: 1.87rem;
+		--bs-gutter-y: #{rem(70)};
 	}
 	// .blog__btn
 	&__btn {
@@ -760,5 +758,12 @@
 	&__item-desc {
 		line-height: 170%;
 		opacity: 0.75;
+	}
+}
+
+.blog {
+	// .blog__pagination
+	&__pagination {
+		margin-top: rem(85);
 	}
 }

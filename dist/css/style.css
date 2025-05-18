@@ -12324,6 +12324,67 @@ body.lock-menu {
   gap: 0.9375rem;
 }
 
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pagination__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 575.98px) {
+  .pagination__list {
+    gap: 0.75rem;
+  }
+}
+.pagination__link, .pagination__next, .pagination__prev {
+  width: 3.75rem;
+  height: 3.75rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 150%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f5f5;
+  transition: background-color 0.3s ease 0s;
+}
+.pagination__link.active, .active.pagination__next, .active.pagination__prev {
+  background: #d7b65d;
+  color: #192026;
+  pointer-events: none;
+}
+@media (any-hover: hover) {
+  .pagination__link[href]:hover, [href].pagination__next:hover, [href].pagination__prev:hover {
+    background: #192026;
+    color: #fff;
+  }
+}
+.pagination__next span, .pagination__prev span {
+  display: none;
+}
+@media (min-width: 743.98px) {
+  .pagination__next span, .pagination__prev span {
+    display: inline;
+  }
+}
+.pagination__next[aria-disabled=true], .pagination__prev[aria-disabled=true] {
+  pointer-events: none;
+  user-select: none;
+  opacity: 0.3;
+  display: none;
+}
+@media (any-hover: hover) {
+  .pagination__next:hover, .pagination__prev:hover {
+    color: #d7b65d;
+  }
+}
+.pagination__prev::before {
+  transform: rotate(180deg);
+}
 .breadcrumbs__list {
   display: flex;
   flex-wrap: wrap;
@@ -13847,6 +13908,7 @@ html .datepicker__day.is-otherMonth {
 .blog__title {
   position: relative;
   padding-bottom: 0.875rem;
+  margin-bottom: 3.5rem;
 }
 .blog__title::before {
   content: "";
@@ -13868,11 +13930,8 @@ html .datepicker__day.is-otherMonth {
   transform: translateX(-50%);
 }
 .blog__list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  max-width: 60.5rem;
-  gap: 1.87rem;
-  margin: 3.5rem auto 0;
+  --bs-gutter-x: 1.87rem;
+  --bs-gutter-y: 4.375rem;
 }
 .blog__btn {
   margin-top: 4rem;
@@ -13963,6 +14022,10 @@ html .datepicker__day.is-otherMonth {
 .blog__item-desc {
   line-height: 170%;
   opacity: 0.75;
+}
+
+.blog__pagination {
+  margin-top: 5.3125rem;
 }
 
 .heading {

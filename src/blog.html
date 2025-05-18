@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+    @@include('html/_head.html', {
+    'title': ''
+    })
+    <body>
+        <section class="wrapper">
+            @@include('html/_header.html', {
+            "active": 5
+            })
+            <main class="page">
+                <section class="heading" style="background-image: url('@img/cars_maybach_cover.jpg');">
+                    <div class="container">
+                        <div class="heading__body">
+                            <h1 class="heading__title title-lg">
+                                Виды поездок на автомобилях класса люкс <br> <span class="color-accent">по Сочи и Черноморскому побережью</span>
+                            </h1>
+                            <nav class="heading__nav breadcrumbs">
+                                <ul class="breadcrumbs__list">
+                                    <li class="breadcrumbs__item">
+                                        <a href="" class="breadcrumbs__link">Главная</a>
+                                    </li>
+                                    <li class="breadcrumbs__item">
+                                        <a href="" class="breadcrumbs__link active">Виды поездок</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </section>
+                <div class="blog">
+                    <div class="container">
+                        <ul class="blog__list row">
+                            @@loop('./html/templates/_blog-item.html', "./html/json/blog.json")
+                        </ul>
+                        <nav aria-label="blog navigation" class="blog__pagination pagination">
+                            <ul class="pagination__list">
+                                <li class="pagination__item"><a href="" aria-disabled="true" class="pagination__prev icon-chevron"></a></li>
+                                <li class="pagination__item"><a href="" class="pagination__link active">1</a></li>
+                                <li class="pagination__item"><a href="" class="pagination__link">2</a></li>
+                                <li class="pagination__item"><a href="" class="pagination__next icon-chevron"></a></li>
+                            </ul>
+                        </nav>
+
+                    </div>
+                </div>
+            </main>
+            @@include('html/_footer.html', {})
+            <!-- @@include('html/_modal.html', {}) -->
+
+            @@include('html/_js.html', {})
+    </body>
+</html>
