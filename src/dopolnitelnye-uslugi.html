@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+    @@include('html/_head.html', {
+    'title': ''
+    })
+    <body>
+        <section class="wrapper">
+            @@include('html/_header.html', {
+            "active": 8
+            })
+            <main class="page">
+                <section class="heading" style="background-image: url('@img/additional_services.jpg');">
+                    <div class="container">
+                        <div class="heading__body">
+                            <h1 class="heading__title title-lg">
+                                Дополнительные услуги и сервисы <br>
+                                <span class="color-accent">в Сочи и Краснодарском крае</span>
+                            </h1>
+                            <nav class="heading__nav breadcrumbs">
+                                <ul class="breadcrumbs__list">
+                                    <li class="breadcrumbs__item">
+                                        <a href="" class="breadcrumbs__link">Главная</a>
+                                    </li>
+                                    <li class="breadcrumbs__item">
+                                        <a href="" class="breadcrumbs__link active">Дополнительные услуги</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </section>
+                <div class="blog">
+                    <div class="container">
+                        <ul class="blog__list row">
+                            @@loop('./html/templates/_blog-item.html', "./html/json/extras.json")
+                        </ul>
+                    </div>
+                </div>
+            </main>
+            @@include('html/_footer.html', {})
+            <!-- @@include('html/_modal.html', {}) -->
+
+            @@include('html/_js.html', {})
+    </body>
+</html>
