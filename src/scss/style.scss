@@ -85,6 +85,9 @@ body {
 
 // Отзывчивая
 .container {
+	@media (min-width: $md3) {
+		max-width: 86%;
+	}
 	@media (min-width: $md2) {
 		max-width: 1220px;
 	}

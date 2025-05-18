@@ -89,10 +89,12 @@
 	&__options {
 		display: flex;
 		align-items: center;
-		justify-content: center;
 		flex-wrap: wrap;
 		min-height: 100%;
 		gap: 1rem;
+		@media (min-width: $md3) {
+			justify-content: center;
+		}
 	}
 	// .form__option
 	&__option {
@@ -129,6 +131,10 @@
 	}
 }
 
+.datepicker {
+	width: 100%;
+}
+
 .btn {
 	position: relative;
 	z-index: 1;
@@ -146,9 +152,11 @@
 	font-weight: 500;
 	line-height: 194.286%;
 
-	padding: rem(12) rem(38);
 	gap: 0.46rem;
-
+	padding: rem(16) rem(30);
+	@media (min-width: $md3) {
+		padding: rem(12) rem(38);
+	}
 	&::before {
 		order: 1;
 		font-size: rem(10);

@@ -10,17 +10,29 @@
 	font-weight: 500;
 	line-height: 90%;
 	letter-spacing: -0.03125rem;
-	font-size: rem(80);
+	font-size: rem(46);
+	@media (min-width: $md3) {
+		font-size: rem(72);
+	}
+	@media (min-width: $md2) {
+		font-size: rem(80);
+	}
 	@media (min-width: $md0) {
 		font-size: 7.5rem;
 	}
 }
 .title-xl {
 	font-family: $font-stix;
-	font-size: rem(80);
 	font-weight: 500;
 	line-height: 100%;
 	letter-spacing: -0.03125rem;
+	font-size: rem(40);
+	@media (min-width: $md3) {
+		font-size: rem(64);
+	}
+	@media (min-width: $md0) {
+		font-size: rem(80);
+	}
 }
 .title-lg {
 	font-family: $font-stix;
@@ -40,7 +52,10 @@
 	font-weight: 500;
 	line-height: 100%;
 	letter-spacing: -0.03125rem;
-	font-size: rem(30);
+	font-size: rem(24);
+	@media (min-width: $md5) {
+		font-size: rem(30);
+	}
 	@media (min-width: $md3) {
 		font-size: 3rem;
 	}
@@ -56,10 +71,13 @@
 }
 .title-sm {
 	font-family: $font-stix;
-	font-size: rem(36);
 	font-weight: 500;
 	line-height: 110%;
 	letter-spacing: -0.03125rem;
+	font-size: rem(30);
+	@media (min-width: $md4) {
+		font-size: rem(36);
+	}
 }
 
 .color-accent {
@@ -87,13 +105,19 @@
 	}
 }
 .swiper-button-prev {
-	left: rem(-40);
+	left: 0;
+	@media (min-width: $md3) {
+		left: rem(-40);
+	}
 	&::before {
 		transform: rotate(180deg);
 	}
 }
 .swiper-button-next {
-	right: rem(-40);
+	right: 0;
+	@media (min-width: $md3) {
+		right: rem(-40);
+	}
 }
 
 // .swiper-pagination {

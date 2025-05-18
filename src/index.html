@@ -8,55 +8,53 @@
             @@include('html/_header.html', {})
             <main class="page">
                 <section class="promo">
-                    <div class="container">
-                        <div class="promo__slider swiper">
-                            <div class="swiper-wrapper">
-                                <div class="promo__slide swiper-slide">
-                                    <div class="promo__background">
-                                        <img src="@img/promo/01.jpg" alt="Фон">
-                                    </div>
-                                    <div class="container">
-                                        <h1 class="promo__title title-xxl">
-                                            <span class="color-accent">Аренда премиальных автомобилей</span> <br> в Сочи с водителем
-                                        </h1>
-                                    </div>
+                    <div class="promo__slider swiper">
+                        <div class="swiper-wrapper">
+                            <div class="promo__slide swiper-slide">
+                                <div class="promo__background">
+                                    <img src="@img/promo/01.jpg" alt="Фон">
                                 </div>
-                                <div class="promo__slide swiper-slide">
-                                    <div class="promo__background">
-                                        <img src="@img/promo/02.jpg" alt="Фон">
-                                    </div>
-                                    <div class="container">
-                                        <h2 class="promo__title title-xxl">
-                                            <span class="color-accent">Заказ Maybach и Mercedes</span> <br>
-                                            с водителем в Сочи
-                                        </h2>
-                                    </div>
-                                </div>
-                                <div class="promo__slide swiper-slide">
-                                    <div class="promo__background">
-                                        <img src="@img/promo/03.jpg" alt="Фон">
-                                    </div>
-                                    <div class="container">
-                                        <h2 class="promo__title title-xxl">
-                                            <span class="color-accent"> Аренда транспорта в Сочи</span> <br>
-                                            премиум класса
-                                        </h2>
-                                    </div>
+                                <div class="container">
+                                    <h1 class="promo__title title-xxl">
+                                        <span class="color-accent">Аренда премиальных автомобилей</span> <br> в Сочи с водителем
+                                    </h1>
                                 </div>
                             </div>
-                            <div class="promo__pagination swiper-pagination"></div>
-                        </div>
-                        <div class="promo__services">
-                            <div class="container">
-                                <div class="promo__services-slider">
-                                    <button type="button" class="promo__services-prev swiper-button-prev"></button>
-                                    <div class="swiper">
-                                        <div class="swiper-wrapper">
-                                            @@loop('./html/templates/_promo-service.html', './html/json/promo-services.json')
-                                        </div>
-                                    </div>
-                                    <button type="button" class="promo__services-next swiper-button-next"></button>
+                            <div class="promo__slide swiper-slide">
+                                <div class="promo__background">
+                                    <img src="@img/promo/02.jpg" alt="Фон">
                                 </div>
+                                <div class="container">
+                                    <h2 class="promo__title title-xxl">
+                                        <span class="color-accent">Заказ Maybach и Mercedes</span> <br>
+                                        с водителем в Сочи
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="promo__slide swiper-slide">
+                                <div class="promo__background">
+                                    <img src="@img/promo/03.jpg" alt="Фон">
+                                </div>
+                                <div class="container">
+                                    <h2 class="promo__title title-xxl">
+                                        <span class="color-accent"> Аренда транспорта в Сочи</span> <br>
+                                        премиум класса
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="promo__pagination swiper-pagination"></div>
+                    </div>
+                    <div class="promo__services">
+                        <div class="container">
+                            <div class="promo__services-slider">
+                                <button type="button" class="promo__services-prev swiper-button-prev"></button>
+                                <div class="swiper">
+                                    <div class="swiper-wrapper">
+                                        @@loop('./html/templates/_promo-service.html', './html/json/promo-services.json')
+                                    </div>
+                                </div>
+                                <button type="button" class="promo__services-next swiper-button-next"></button>
                             </div>
                         </div>
                     </div>
@@ -65,8 +63,8 @@
                     <div class="container">
                         <div class="description__body">
                             <div class="description__main">
-                                <h3 class="description__title title"><span class="color-accent">Трансфер премиум-класса</span> и отдых люкс</h3>
-                                <div class="description__text">
+                                <h3 class="description__title title text-xl-start text-center"><span class="color-accent">Трансфер премиум-класса</span> и&nbsp;отдых люкс</h3>
+                                <div class="description__text text-md-start text-center">
                                     <p>В нашем автопарке работают только новые автомобили, приобретенные нашей компанией специально для оказания vip услуг – <strong>трансфер</strong> и <strong>аренда премиальных автомобилей с водителем</strong> в Сочи и Краснодарскому краю.<br>
                                         <strong>Водители</strong> – солидные, вежливые и квалифицированные. Наша команда всегда старается индивидуально подходить к каждому клиенту и его запросам. Мы работаем как с частным, так и с корпоративным сегментом. Среди наших клиентов – российские и мировые звезды, Формула-1, Российский инвестиционный и Петербургский международный экономический форумы, а также компании <strong>Сбербанк</strong>, <strong>Газпром</strong>, <strong>Норникель</strong>.
                                     </p>
@@ -100,48 +98,48 @@
                 <section class="benefits">
                     <div class="container">
                         <div class="row">
-                            <div class="col-6">
+                            <div class="col-xl-6 d-xl-block d-none">
                                 <div class="benefits__image">
                                     <img src="@img/pilot_chair.jpg" alt="Фото салона">
                                 </div>
                             </div>
-                            <div class="col-6">
-                                <h3 class="benefits__title title-sm">
+                            <div class="col-xl-6">
+                                <h3 class="benefits__title title-sm text-xl-start text-center">
                                     <span class="color-accent">В аренду автомобиля в Сочи</span> включены опции
                                 </h3>
                                 <div class="benefits__list">
                                     <ul class="row">
-                                        <li class="benefits__item col-lg-4 col-md-4 col-sm-4 col-ms-6 col-xs-6">
+                                        <li class="benefits__item col-lg-4 col-md-4 col-6">
                                             <div class="benefits__item-icon">
                                                 <img src="@img/icons/secure-shield-password.svg" alt="Иконка">
                                             </div>
                                             <div class="benefits__item-text">Безопасность и <br> приватность</div>
                                         </li>
-                                        <li class="benefits__item col-lg-4 col-md-4 col-sm-4 col-ms-6 col-xs-6">
+                                        <li class="benefits__item col-lg-4 col-md-4 col-6">
                                             <div class="benefits__item-icon">
                                                 <img src="@img/icons/aoroplane.svg" alt="Иконка">
                                             </div>
                                             <div class="benefits__item-text">Встреча в <br> аэропорту</div>
                                         </li>
-                                        <li class="benefits__item col-lg-4 col-md-4 col-sm-4 col-ms-6 col-xs-6">
+                                        <li class="benefits__item col-lg-4 col-md-4 col-6">
                                             <div class="benefits__item-icon">
                                                 <img src="@img/icons/water-bottle.svg" alt="Иконка">
                                             </div>
                                             <div class="benefits__item-text">Вода для <br> каждого <br> пассажира</div>
                                         </li>
-                                        <li class="benefits__item col-lg-4 col-md-4 col-sm-4 col-ms-6 col-xs-6">
+                                        <li class="benefits__item col-lg-4 col-md-4 col-6">
                                             <div class="benefits__item-icon">
                                                 <img src="@img/icons/umbrella.svg" alt="Иконка">
                                             </div>
                                             <div class="benefits__item-text">Водитель <br> защитит от <br> дождя</div>
                                         </li>
-                                        <li class="benefits__item col-lg-4 col-md-4 col-sm-4 col-ms-6 col-xs-6">
+                                        <li class="benefits__item col-lg-4 col-md-4 col-6">
                                             <div class="benefits__item-icon">
                                                 <img src="@img/icons/battery.svg" alt="Иконка">
                                             </div>
                                             <div class="benefits__item-text">Зарядка для <br> телефонов</div>
                                         </li>
-                                        <li class="benefits__item col-lg-4 col-md-4 col-sm-4 col-ms-6 col-xs-6">
+                                        <li class="benefits__item col-lg-4 col-md-4 col-6">
                                             <div class="benefits__item-icon">
                                                 <img src="@img/icons/wi-fi-wifi-internet.svg" alt="Иконка">
                                             </div>
@@ -156,7 +154,7 @@
                 <section class="car-order">
                     <div class="container">
                         <div class="row">
-                            <div class="col-6">
+                            <div class="col-xl-6">
                                 <div class="car-order__main">
                                     <h4 class="car-order__title title-sm">
                                         Как заказать <span class="color-accent"> автомобиль класса люкс </span> в Сочи
@@ -173,7 +171,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6">
+                            <div class="col-xl-6">
                                 @@include('./html/_main-form.html')
                             </div>
                         </div>
@@ -182,7 +180,7 @@
                 <section class="about parallax" style="background-image: url('@img/lux_travelling.jpg')">
                     <div class="container">
                         <div class="about__body text-center">
-                            <h2 class="about__title title-xl"><span class="color-accent">Трансфера по Черноморью </span> премиум-класса</h2>
+                            <h2 class="about__title title-xl"><span class="color-accent">Трансфера по Черноморью </span> <br> премиум-класса</h2>
                             <div class="about__desc">
                                 <p>Путешествие по Черноморскому побережью – это настоящая романтика! Будь то бизнес-планы, деловые встречи, корпоративные мероприятия или семейный отдых - каждый из вас обязан воспользоваться возможностями, которые предлагает компания VipTrip.</p>
                                 <p>Мы возьмем на себя организацию вашего перемещения в свои руки на протяжении всего вашего путешествия - премиальные автомобили, морской или авиа транспорт.</p>

@@ -1,8 +1,6 @@
 "use strict";
 
 
-// const { default: Swiper } = require("swiper");
-
 // Инициализация Fancybox
 if (typeof Fancybox !== "undefined" && Fancybox !== null) {
     Fancybox.bind("[data-fancybox]", {
