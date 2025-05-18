@@ -4,19 +4,32 @@
 
 //============ МОДУЛИ ====================
 
-.title-xl {
+.title-xxl {
 	font-family: $font-stix;
 	font-size: 7.5rem;
 	font-weight: 500;
 	line-height: 90%;
 	letter-spacing: -0.03125rem;
 }
-.title-lg {
+.title-xl {
 	font-family: $font-stix;
 	font-size: rem(80);
 	font-weight: 500;
 	line-height: 100%;
 	letter-spacing: -0.03125rem;
+}
+.title-lg {
+	font-family: $font-stix;
+	font-weight: 500;
+	line-height: 115%;
+	letter-spacing: -0.03125rem;
+	font-size: 2.25rem;
+	@media (min-width: $md3) {
+		font-size: 3rem;
+	}
+	@media (min-width: $md1) {
+		font-size: 4rem;
+	}
 }
 .title {
 	font-family: $font-stix;
@@ -24,6 +37,15 @@
 	font-weight: 500;
 	line-height: 100%;
 	letter-spacing: -0.03125rem;
+}
+.title-md {
+	font-family: $font-stix;
+	line-height: 120%;
+	letter-spacing: -0.03125rem;
+	font-size: 1.875rem;
+	@media (min-width: $md4) {
+		font-size: 2.5rem;
+	}
 }
 .title-sm {
 	font-family: $font-stix;

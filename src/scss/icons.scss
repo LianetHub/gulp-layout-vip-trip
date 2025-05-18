@@ -17,6 +17,12 @@
 		display: block;
 	}
 }
+.icon-quotes:before {
+	content: "\e910";
+}
+.icon-phone-alternate:before {
+	content: "\e911";
+}
 .icon-envelope:before {
 	content: "\e90e";
 }
