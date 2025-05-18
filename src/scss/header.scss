@@ -117,7 +117,7 @@
 			display: flex;
 			align-items: center;
 			gap: 0.42438rem;
-			color: #d7b65d;
+			color: $accent;
 
 			font-family: $font-stix;
 			font-size: 0.875rem;
@@ -125,7 +125,17 @@
 			letter-spacing: -0.03125rem;
 			&::before {
 				font-size: 1.25rem;
+				transition: color 0.3s ease;
 				color: #fff;
+			}
+
+			@media (any-hover: hover) {
+				&:hover {
+					color: #fff;
+					&::before {
+						color: $accent;
+					}
+				}
 			}
 		}
 	}

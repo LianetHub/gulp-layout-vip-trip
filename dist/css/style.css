@@ -12974,7 +12974,16 @@ html .datepicker__day.is-otherMonth {
   }
   .header__action::before {
     font-size: 1.25rem;
+    transition: color 0.3s ease;
     color: #fff;
+  }
+}
+@media (min-width: 1469.98px) and (any-hover: hover) {
+  .header__action:hover {
+    color: #fff;
+  }
+  .header__action:hover::before {
+    color: #d7b65d;
   }
 }
 .header__languages {
@@ -14029,7 +14038,6 @@ html .datepicker__day.is-otherMonth {
 }
 
 .heading {
-  padding-top: var(--header-height, 11.375rem);
   position: relative;
   z-index: 1;
   color: #fff;
@@ -14037,6 +14045,9 @@ html .datepicker__day.is-otherMonth {
   background-position: bottom center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+.heading:first-child {
+  padding-top: var(--header-height, 11.375rem);
 }
 .heading::before {
   content: "";
@@ -14298,6 +14309,12 @@ html .datepicker__day.is-otherMonth {
 .article ol li:not(:last-child) {
   margin-bottom: 6px;
 }
+.article img {
+  width: 100%;
+}
+.article img:not(:first-child) {
+  margin-top: 16px;
+}
 .article blockquote {
   padding: 40px 15px 60px;
 }
@@ -14311,4 +14328,21 @@ html .datepicker__day.is-otherMonth {
   text-align: center;
   font-size: 24px;
   font-style: italic;
+}
+.article blockquote cite {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  font-style: normal;
+  color: #d7b65d;
+}
+
+.gallery {
+  margin: 1rem 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.gallery img {
+  margin: 0 !important;
 }

@@ -1,5 +1,4 @@
 .heading {
-	padding-top: $header;
 	position: relative;
 	z-index: 1;
 	color: #fff;
@@ -7,6 +6,9 @@
 	background-position: bottom center;
 	background-size: cover;
 	background-repeat: no-repeat;
+	&:first-child {
+		padding-top: $header;
+	}
 	&::before {
 		content: "";
 		position: absolute;
