@@ -142,6 +142,56 @@ $(document).ready(function () {
     }
 
 
+    // parallax
+
+    function parallax(elements, xpos = "50%", speedFactor = 0.1, outerHeight = true) {
+        const windowEl = window;
+        let windowHeight = window.innerHeight;
+
+        function getHeight(el) {
+            return outerHeight ? el.offsetHeight : el.clientHeight;
+        }
+
+        function update() {
+            const pos = window.scrollY;
+
+            elements.forEach(el => {
+                const top = el.offsetTop;
+                const height = getHeight(el);
+
+                if ((top + height < pos) || (top > pos + windowHeight)) {
+                    return;
+                }
+
+                el.style.backgroundPosition = `${xpos} ${Math.round((top - pos) * speedFactor)}px`;
+            });
+        }
+
+        window.addEventListener('scroll', update);
+        window.addEventListener('resize', () => {
+            windowHeight = window.innerHeight;
+            update();
+        });
+
+        update();
+    }
+
+    function initParallax() {
+        if (/Mobi/.test(navigator.userAgent)) return;
+
+        const fixedParallaxEls = document.querySelectorAll('.parallax');
+
+
+        if (fixedParallaxEls.length > 0) {
+            parallax(Array.from(fixedParallaxEls), "50%", 0.2);
+        }
+
+    }
+
+    initParallax()
+
+
+
     // var swiper = new Swiper("#slider-items", {
     //     navigation: {
     //         nextEl: "#slider-items-next",

@@ -17,7 +17,12 @@
 		display: block;
 	}
 }
-
+.icon-envelope:before {
+	content: "\e90e";
+}
+.icon-phone:before {
+	content: "\e90f";
+}
 .icon-clock:before {
 	content: "\e90c";
 }
@@ -44,6 +49,9 @@
 }
 .icon-double-arrow:before {
 	content: "\e904";
+}
+.icon-eye:before {
+	content: "\e90d";
 }
 .icon-chevron:before {
 	content: "\e900";
