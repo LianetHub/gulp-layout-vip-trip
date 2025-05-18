@@ -12043,6 +12043,13 @@ input[type=number] {
 }
 
 @font-face {
+  font-family: "Mulish";
+  font-display: swap;
+  src: url("../fonts/Mulish-Regular.woff2") format("woff2"), url("../fonts/Mulish-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
   font-family: "icons";
   font-display: swap;
   src: url("../fonts/icons.woff2") format("woff2"), url("../fonts/icons.woff") format("woff");
@@ -12064,23 +12071,16 @@ input[type=number] {
   font-style: italic;
 }
 @font-face {
-  font-family: "Mulish";
+  font-family: "Taviraj";
   font-display: swap;
-  src: url("../fonts/Mulish-Regular.woff2") format("woff2"), url("../fonts/Mulish-Regular.woff") format("woff");
-  font-weight: 400;
+  src: url("../fonts/Taviraj-Medium-Italic.woff2") format("woff2"), url("../fonts/Taviraj-Medium-Italic.woff") format("woff");
+  font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "STIXTwoText";
   font-display: swap;
   src: url("../fonts/STIXTwoText-Medium.woff2") format("woff2"), url("../fonts/STIXTwoText-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Taviraj";
-  font-display: swap;
-  src: url("../fonts/Taviraj-Medium-Italic.woff2") format("woff2"), url("../fonts/Taviraj-Medium-Italic.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
@@ -12207,6 +12207,7 @@ body.lock-menu {
   min-height: 100%;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 @media (min-width: 1199.98px) {
@@ -12228,6 +12229,12 @@ body.lock-menu {
 @media (min-width: 1199.98px) {
   .container-sm {
     max-width: 1046px;
+  }
+}
+
+@media (min-width: 1199.98px) {
+  .container-md {
+    max-width: 1146px;
   }
 }
 
@@ -12419,10 +12426,15 @@ body.lock-menu {
 
 .title-xxl {
   font-family: "STIXTwoText";
-  font-size: 7.5rem;
   font-weight: 500;
   line-height: 90%;
   letter-spacing: -0.03125rem;
+  font-size: 5rem;
+}
+@media (min-width: 1599.98px) {
+  .title-xxl {
+    font-size: 7.5rem;
+  }
 }
 
 .title-xl, .article h1, .article .h1 {
@@ -12722,6 +12734,20 @@ body.lock-menu {
 .btn.btn-black {
   background: #0f141e;
   color: #fff;
+}
+.btn.btn-black::after {
+  background-color: #d7b65d;
+}
+@media (any-hover: hover) {
+  .btn.btn-black:hover {
+    color: #fff;
+  }
+  .btn.btn-black:hover::before {
+    transform: translate(0.375rem);
+  }
+  .btn.btn-black:hover::after {
+    width: 100%;
+  }
 }
 .btn.btn-fullwidth {
   width: 100%;
@@ -14037,6 +14063,135 @@ html .datepicker__day.is-otherMonth {
   margin-top: 5.3125rem;
 }
 
+.service {
+  padding: 5rem 0 2.5rem;
+}
+@media (min-width: 743.98px) {
+  .service {
+    padding: 6.25rem 0 3.125rem;
+  }
+}
+.service + .article {
+  padding-top: 3.125rem;
+}
+.service__header .row {
+  --bs-gutter-y: 3.125rem;
+}
+.service__variation {
+  margin: 1.25rem 0;
+}
+.service__variation-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 1.7;
+  border-bottom: 0.0625rem dashed rgba(0, 0, 0, 0.1);
+  white-space: nowrap;
+}
+.service__variation-item:not(:last-child) {
+  margin-bottom: 0.625rem;
+}
+.service__variation-value {
+  color: #d7b65d;
+}
+.service__subtitle {
+  line-height: 1.7;
+}
+.service__calc {
+  max-width: 43.75rem;
+  margin: 4rem auto 0;
+}
+.service__calc-tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 -15px 30px;
+}
+.service__calc-tab {
+  padding: 15px 0;
+  border: 0;
+  background: transparent;
+  margin: 0 15px;
+  font-weight: 700;
+  border-bottom: 2px solid transparent;
+  font-size: 15px;
+}
+@media (min-width: 743.98px) {
+  .service__calc-tab {
+    font-size: 20px;
+  }
+}
+.service__calc-tab.active {
+  border-bottom: 2px solid #d7b65d;
+}
+.service__calc-content {
+  display: none;
+}
+.service__calc-content.active {
+  display: block;
+}
+.service__calc-form table {
+  border: 1px solid #e9e6ed;
+  width: 100%;
+}
+.service__calc-form table tr:nth-child(even) {
+  background: #f9f9f9;
+}
+.service__calc-form table td {
+  border: 1px solid #e9e6ed;
+  text-align: center;
+  padding: 15px;
+  text-align: center;
+  width: 50%;
+  font-size: 15px;
+}
+@media (min-width: 743.98px) {
+  .service__calc-form table td {
+    font-size: 18px;
+  }
+}
+.service__calc-form table td:first-child {
+  width: 60px;
+}
+.service__calc-footer {
+  margin-top: 3.125rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.1rem;
+}
+.service__calc-field {
+  position: relative;
+}
+.service__calc-quantity {
+  width: 95px;
+  padding: 10px 20px;
+  min-height: 3.25rem;
+}
+.service__calc-unit {
+  width: 3.125rem;
+}
+.service__calc-down {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 50%;
+  width: 1.875rem;
+}
+.service__calc-down::before {
+  transform: rotate(90deg);
+}
+.service__calc-up {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 50%;
+  width: 1.875rem;
+}
+.service__calc-up::before {
+  transform: rotate(-90deg);
+}
+
 .heading {
   position: relative;
   z-index: 1;
@@ -14311,9 +14466,13 @@ html .datepicker__day.is-otherMonth {
 }
 .article img {
   width: 100%;
+  max-width: 100%;
 }
 .article img:not(:first-child) {
   margin-top: 16px;
+}
+.article img + img:not(:first-child) {
+  margin-top: 3.75rem;
 }
 .article blockquote {
   padding: 40px 15px 60px;
@@ -14340,9 +14499,23 @@ html .datepicker__day.is-otherMonth {
 .gallery {
   margin: 1rem 0;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
-.gallery img {
+@media (min-width: 743.98px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 991.98px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 991.98px) {
+  .gallery__item:nth-child(odd):last-child {
+    grid-column: span 2;
+  }
+}
+.gallery__item img {
   margin: 0 !important;
 }

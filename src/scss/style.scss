@@ -76,6 +76,7 @@ body {
 	min-height: 100%;
 	display: flex;
 	flex-direction: column;
+	overflow-x: hidden;
 }
 
 //================== ОБОЛОЧКА==================================
@@ -102,6 +103,11 @@ body {
 		max-width: 1046px;
 	}
 }
+.container-md {
+	@media (min-width: $md2) {
+		max-width: 1146px;
+	}
+}
 
 //=============== ОСНОВНАЯ СЕТКА===============================
 
@@ -123,5 +129,6 @@ body {
 
 // @import "./old";
 @import "./pages/home";
+@import "./pages/service";
 @import "./pages/about";
 @import "./pages/article";

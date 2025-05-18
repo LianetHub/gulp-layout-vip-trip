@@ -199,6 +199,20 @@
 	&.btn-black {
 		background: #0f141e;
 		color: #fff;
+		&::after {
+			background-color: #d7b65d;
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				color: #fff;
+				&::before {
+					transform: translate(rem(6));
+				}
+				&::after {
+					width: 100%;
+				}
+			}
+		}
 	}
 
 	&.btn-fullwidth {

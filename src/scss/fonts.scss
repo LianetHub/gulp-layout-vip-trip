@@ -1,4 +1,11 @@
 @font-face {
+                            font-family: 'Mulish';
+                            font-display: swap;
+                            src: url("../fonts/Mulish-Regular.woff2") format("woff2"), url("../fonts/Mulish-Regular.woff") format("woff");
+                            font-weight: 400;
+                            font-style: normal;
+                        }
+@font-face {
                             font-family: 'icons';
                             font-display: swap;
                             src: url("../fonts/icons.woff2") format("woff2"), url("../fonts/icons.woff") format("woff");
@@ -20,23 +27,16 @@
                             font-style: italic;
                         }
 @font-face {
-                            font-family: 'Mulish';
+                            font-family: 'Taviraj';
                             font-display: swap;
-                            src: url("../fonts/Mulish-Regular.woff2") format("woff2"), url("../fonts/Mulish-Regular.woff") format("woff");
-                            font-weight: 400;
+                            src: url("../fonts/Taviraj-Medium-Italic.woff2") format("woff2"), url("../fonts/Taviraj-Medium-Italic.woff") format("woff");
+                            font-weight: 500;
                             font-style: normal;
                         }
 @font-face {
                             font-family: 'STIXTwoText';
                             font-display: swap;
                             src: url("../fonts/STIXTwoText-Medium.woff2") format("woff2"), url("../fonts/STIXTwoText-Medium.woff") format("woff");
-                            font-weight: 500;
-                            font-style: normal;
-                        }
-@font-face {
-                            font-family: 'Taviraj';
-                            font-display: swap;
-                            src: url("../fonts/Taviraj-Medium-Italic.woff2") format("woff2"), url("../fonts/Taviraj-Medium-Italic.woff") format("woff");
                             font-weight: 500;
                             font-style: normal;
                         }

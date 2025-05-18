@@ -32,7 +32,62 @@ $(document).ready(function () {
         if ($target.hasClass('header__languages-current')) {
             $target.next().slideToggle();
         }
+
+        if ($target.hasClass('service__calc-tab')) {
+            $target.addClass('active').siblings().removeClass('active');
+            $('.service__calc-content').eq($target.index()).addClass('active').siblings().removeClass('active');
+        }
     });
+
+    // service calc
+    const $form = $('.service__calc-form');
+    if ($form.length) {
+        const $quantityInput = $form.find('input[name="quantity"]');
+        const $unit = $form.find('.service__calc-unit');
+
+        function updateLimits() {
+            const $selected = $form.find('input[name="option"]:checked');
+            const min = parseInt($selected.data('min'), 10);
+            const max = parseInt($selected.data('max'), 10);
+            const unit = $selected.data('text');
+
+
+            $unit.text(unit);
+
+            let current = parseInt($quantityInput.val(), 10);
+            if (isNaN(current) || current < min) current = min;
+            if (current > max) current = max;
+            $quantityInput.val(current);
+
+
+            $quantityInput.data('min', min).data('max', max);
+        }
+
+
+        $form.on('change', 'input[name="option"]', function () {
+            updateLimits();
+        });
+
+
+        $form.find('.service__calc-up').on('click', function () {
+            const current = parseInt($quantityInput.val(), 10);
+            const max = parseInt($quantityInput.data('max'), 10);
+            if (current < max) {
+                $quantityInput.val(current + 1);
+            }
+        });
+
+        $form.find('.service__calc-down').on('click', function () {
+            const current = parseInt($quantityInput.val(), 10);
+            const min = parseInt($quantityInput.data('min'), 10);
+            if (current > min) {
+                $quantityInput.val(current - 1);
+            }
+        });
+
+
+        updateLimits();
+    }
 
 
     // init select2

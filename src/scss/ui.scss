@@ -7,10 +7,13 @@
 
 .title-xxl {
 	font-family: $font-stix;
-	font-size: 7.5rem;
 	font-weight: 500;
 	line-height: 90%;
 	letter-spacing: -0.03125rem;
+	font-size: rem(80);
+	@media (min-width: $md0) {
+		font-size: 7.5rem;
+	}
 }
 .title-xl {
 	font-family: $font-stix;

@@ -73,8 +73,14 @@
 	}
 	& img {
 		width: 100%;
+		max-width: 100%;
 		&:not(:first-child) {
 			margin-top: 16px;
+		}
+		& + img {
+			&:not(:first-child) {
+				margin-top: rem(60);
+			}
 		}
 	}
 	blockquote {
@@ -105,9 +111,21 @@
 .gallery {
 	margin: 1rem 0;
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
 	gap: 10px;
-	& img {
-		margin: 0 !important;
+	@media (min-width: $md4) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	@media (min-width: $md3) {
+		grid-template-columns: repeat(3, 1fr);
+	}
+	&__item {
+		&:nth-child(odd):last-child {
+			@media (max-width: $md3) {
+				grid-column: span 2;
+			}
+		}
+		& img {
+			margin: 0 !important;
+		}
 	}
 }

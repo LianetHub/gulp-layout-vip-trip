@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+    @@include('html/_head.html', {
+    'title': ''
+    })
+    <body>
+        <section class="wrapper">
+            @@include('html/_header.html', {
+            "active": 0
+            })
+            <main class="page">
+                <section class="heading" style="background-image: url('@img/maybach_top.jpg');">
+                    <div class="container">
+                        <div class="heading__body">
+                            <h1 class="heading__title title-lg">
+                                Аренда премиального Мерседеса S-класса <br>
+                                <span class="color-accent">Майбах X222 в Сочи с водителем</span>
+                            </h1>
+                            <nav class="heading__nav breadcrumbs">
+                                <ul class="breadcrumbs__list">
+                                    <li class="breadcrumbs__item">
+                                        <a href="" class="breadcrumbs__link">Главная</a>
+                                    </li>
+                                    <li class="breadcrumbs__item">
+                                        <a href="" class="breadcrumbs__link">Магазин </a>
+                                    </li>
+                                    <li class="breadcrumbs__item">
+                                        <a href="" class="breadcrumbs__link active">Аренда Maybach X222 в Сочи лояльности</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </section>
+                <section class="service">
+                    <div class="container container-md">
+                        <div class="service__header">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <a href="@img/maybach_general.jpg" data-fancybox class="service__image">
+                                        <img src="@img/maybach_general.jpg" alt="Фото услуги">
+                                    </a>
+                                </div>
+                                <div class="col-md-6">
+                                    <h2 class="service__title title-sm">Аренда Maybach X222 в Сочи</h2>
+                                    <div class="service__variation">
+                                        <div class="service__variation-item">
+                                            <div class="service__variation-label">Класс автомобиля</div>
+                                            <div class="service__variation-value">
+                                                Премиум </div>
+                                        </div>
+                                        <div class="service__variation-item">
+                                            <div class="service__variation-label">Комплектация</div>
+                                            <div class="service__variation-value">
+                                                Максимальная </div>
+                                        </div>
+                                        <div class="service__variation-item">
+                                            <div class="service__variation-label">Цвет кузова</div>
+                                            <div class="service__variation-value">
+                                                Черный </div>
+                                        </div>
+                                        <div class="service__variation-item">
+                                            <div class="service__variation-label">Цвет салона</div>
+                                            <div class="service__variation-value">
+                                                Светлый </div>
+                                        </div>
+                                        <div class="service__variation-item">
+                                            <div class="service__variation-label">Год выпуска</div>
+                                            <div class="service__variation-value">
+                                                2020 </div>
+                                        </div>
+                                        <div class="service__variation-item">
+                                            <div class="service__variation-label">Количество пассажирских мест</div>
+                                            <div class="service__variation-value">
+                                                3 персоны </div>
+                                        </div>
+                                        <div class="service__variation-item">
+                                            <div class="service__variation-label">Количество мест багажа</div>
+                                            <div class="service__variation-value">
+                                                1 место </div>
+                                        </div>
+                                        <div class="service__variation-item">
+                                            <div class="service__variation-label">Количество автомобилей</div>
+                                            <div class="service__variation-value">
+                                                3 машины </div>
+                                        </div>
+                                    </div>
+                                    <p class="service__subtitle">
+                                        <em>В таблице <strong>«Аренда автомобиля с водителем»</strong> указана стоимость за <strong>1 час или 1 день аренды</strong>, в зависимости от количества часов/дней. Подробности о действующих промо-акциях и индивидуальных условиях вы можете узнать у наших менеджеров.</em>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service__calc">
+                            <div class="service__calc-tabs">
+                                <button type="button" class="service__calc-tab active">Аренда автомобиля с водителем</button>
+                                <button type="button" class="service__calc-tab">Трансфер</button>
+                            </div>
+                            <div class="service__calc-body">
+                                <div class="service__calc-content active">
+                                    <form action="#" class="service__calc-form">
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <label class="form__option">
+                                                        <input type="radio" name="option" value="2-5" data-min="2" data-max="5" data-text="Часов" checked class="form__option-input hidden" hidden>
+                                                        <span class="form__option-field"></span>
+                                                    </label>
+                                                </td>
+                                                <td>2-5 часов</td>
+                                                <td>5 000 ₽</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <label class="form__option">
+                                                        <input type="radio" name="option" value="6-10" data-min="6" data-max="10" data-text="Часов" class="form__option-input hidden" hidden>
+                                                        <span class="form__option-field"></span>
+                                                    </label>
+                                                </td>
+                                                <td>6-10 часов</td>
+                                                <td>4 000 ₽</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <label class="form__option">
+                                                        <input type="radio" name="option" value="1-4" data-min="1" data-max="4" data-text="Дней" class="form__option-input hidden" hidden>
+                                                        <span class="form__option-field"></span>
+                                                    </label>
+                                                </td>
+                                                <td>1-4 дня</td>
+                                                <td>40 000 ₽</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <label class="form__option">
+                                                        <input type="radio" name="option" value="5-9" data-min="5" data-max="9" data-text="Дней" class="form__option-input hidden" hidden>
+                                                        <span class="form__option-field"></span>
+                                                    </label>
+                                                </td>
+                                                <td>5-9 дней</td>
+                                                <td>38 000 ₽</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <label class="form__option">
+                                                        <input type="radio" name="option" value="10" data-min="10" data-max="10" data-text="Дней" class="form__option-input hidden" hidden>
+                                                        <span class="form__option-field"></span>
+                                                    </label>
+                                                </td>
+                                                <td>10 дней</td>
+                                                <td>35 000 ₽</td>
+                                            </tr>
+                                        </table>
+                                        <div class="service__calc-footer">
+                                            <div class="service__calc-field">
+                                                <input type="number" name="quantity" step="1" class="service__calc-quantity form__control" value="2">
+                                                <button type="button" class="service__calc-down icon-chevron"></button>
+                                                <button type="button" class="service__calc-up icon-chevron"></button>
+                                            </div>
+                                            <span class="service__calc-unit">Дней</span>
+                                            <button type="submit" class="btn btn-black">Забронировать</button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="service__calc-content">
+                                    <form action="#" class="service__calc-form">
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <label class="form__option">
+                                                        <input type="radio" name="transfer" value="5000" checked class="form__option-input hidden" hidden>
+                                                        <span class="form__option-field"></span>
+                                                    </label>
+                                                </td>
+                                                <td>Аэропорт - Адлер</td>
+                                                <td>5 000 ₽</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <label class="form__option">
+                                                        <input type="radio" name="transfer" value="8000" class="form__option-input hidden" hidden>
+                                                        <span class="form__option-field"></span>
+                                                    </label>
+                                                </td>
+                                                <td>Аэропорт - Сочи</td>
+                                                <td>8 000 ₽</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <label class="form__option">
+                                                        <input type="radio" name="transfer" value="10000" class="form__option-input hidden" hidden>
+                                                        <span class="form__option-field"></span>
+                                                    </label>
+                                                </td>
+                                                <td>Аэропорт - Красная поляна</td>
+                                                <td>10 000 ₽</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <label class="form__option">
+                                                        <input type="radio" name="transfer" value="12000" class="form__option-input hidden" hidden>
+                                                        <span class="form__option-field"></span>
+                                                    </label>
+                                                </td>
+                                                <td>Сочи - Красная поляна</td>
+                                                <td>12 000 ₽</td>
+                                            </tr>
+
+                                        </table>
+                                        <div class="service__calc-footer">
+                                            <button type="submit" class="btn btn-black">Забронировать</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <article class="article">
+                    <div class="container container-md">
+                        <p>Серьезные деловые люди всегда стараются поддерживать свой статус и привычный для них уровень комфорта. И если для переговоров им нужно посетить другой город или страну, где нет доступа к личному транспорту и водителю, они пользуются услугами вип такси. В Сочи именно такие услуги и предоставляет наша компания. <strong>VipTrip</strong> – это <strong>аренда автомобиля Мерседес и Майбах с водителем</strong>.</p>
+                        <p>Самым популярным автомобилем представительского класса является <strong>Maybach X222</strong>, который совмещает в себе роскошь этого премиального бренда и все технологические новинки <strong>Merсedes</strong>.<br />
+                            При заказе этого представительского автомобиля <strong>S-класса</strong> наш водитель встретит вас в нужном месте и обеспечит комфортное перемещение по всем точкам рабочего маршрута. Удобно устроившись и вытянув ноги на заднем сидении Maybach X222, вы сможете заниматься своими делами или просто расслабиться после долгой дороги или переговоров.</p>
+                        <p>Перемещаясь на этом вип автомобиле по Сочи сложно оставаться в тени, ваше появление на деловой встрече или в ресторане не останется без внимания. Не заметить на Mercedes-Maybach X222 будет крайне проблематично. Каждый элемент экстерьера дополняет образ и подчеркивает индивидуальность и статусность.<br />
+                            Водитель, предоставленный нашей компанией, будет полностью соответствовать авто. Его задача – не просто доставить вас в нужное место к нужному часу, но и обеспечить максимальный уровень комфорта во время поездки. При необходимости он всегда придет к вам на помощь в затруднительной ситуации, не задавая лишних вопросов и не отвлекая от дел.</p>
+                        <h4>Комфорт и престиж – больше не нужно выбирать</h4>
+                        <p>Места хватит всем, поскольку благодаря удлиненному кузову модели X222, пространства, которого и так было много, стало еще больше. Люкс автомобиль оснащен специальными столиками, где можно удобно расположить документы или ноутбук, имеется встроенная система развлечений. При этом никто и ничто не сможет вам помешать или отвлечь. Даже от внешнего мира вы можете отделиться, подняв шторки, оставшись наедине с собой.</p>
+                        <p>Mercedes Maybach X222 отвечает запросам даже самых требовательных клиентов. Для отделки салона используются премиальные материалы, качество которых не подлежит сомнению. Тактильные ощущения от прикосновения к коже невероятные.<br>
+                            Тихая работа двигателя не создает дискомфорта. При этом его мощность не вызывает сомнений. Несмотря на большой вес автомобиля, он достаточно маневренный и может обеспечить комфортные условия езды, как по городу, так и по автобану. Легкий плавный ход как будто подчеркивает всю важность авто и его пассажира. К тому же эта легкость и плавность не мешает разогнаться до <strong>100 км/час</strong> за считанные <strong>5,6 секунд</strong>, что для бизнес класса является превосходным результатом.
+                        </p>
+                        <img src="@img/gallery/maybach_gallery_1.jpg" alt="Фото">
+                        <img src="@img/gallery/maybach_gallery_2.jpg" alt="Фото">
+                        <img src="@img/gallery/maybach_gallery_3.jpg" alt="Фото">
+                        <img src="@img/gallery/maybach_gallery_4.jpg" alt="Фото">
+                        <img src="@img/gallery/maybach_gallery_5.jpg" alt="Фото">
+                        <h4>Аренда Майбах с водителем в Сочи</h4>
+                        <p><strong>Maybach</strong> – это не тот автомобиль, который нужно водить самостоятельно. Лучше всего брать Майбах в аренду с водителем, доверив управление профессионалам, а самим насладиться поездкой в лучшем среди люкс автомобилей. Плавный ход и практически полное отсутствием каких-либо шумов в салоне позволят вам сосредоточиться на себе и своих делах – будь то работа или отдых. Авто будет просто лететь, не касаясь колесами дороги, по крайней мере, вам так покажется.</p>
+                        <p>Вы можете заказать трансфер в или из аэропорта в Сочи на автомобиле Maybach для себя, своей семьи или деловых партнеров. Цена аренды Майбаха от нашей компании позволяет использовать статусный транспорт не только для быстрого трансфера, но и в течение всего дня. Для этого мы разработали гибкую тарифную сетку и систему привилегий для постоянных клиентов. Деловые поездки, свадьбы, мероприятия и многие другие цели – наши автомобили всегда готовы прийти на помощь, наш сервис обеспечит вам максимальный уровень комфорта и подчеркнет ваш статус.</p>
+                        <h5>Заказать Майбах с водителем в Сочи</h5>
+                        <p>Мы предлагаем несколько способов, как заказать Майбах с водителем, чтобы вам было также комфортно, как и при поездке на этом роскошном автомобиле. Достаточно оформить заказ с помощью специальной формы на сайте или <a href="tel:79933302030">позвонить нам</a> по указанным номерам. Не любите звонков? Не проблема, ведь оформить аренду можно с помощью <a href="https://wa.me/79933302030" target="_blank" rel="noopener">WhatsApp</a>.</p>
+                        <p>Так вы можете уточнить цену услуги на разных условиях, уточнить все нужные детали и быть уверенными в том, что в нужное время и в нужном месте вас будет ждать премиальный Майбах, готовый вести вас куда угодно. Сколько стоит заказать трансфер на Maybach в Сочи на индивидуальных условиях для райдеров, крупных корпоративных клиентов или масштабных мероприятий вы можете узнать у наших менеджеров. Мы всегда идем навстречу нашим клиентам – просто задайте вопрос.</p>
+                        <p>С уверенностью можем сказать, что на нашем рынке мы предоставляем самые выгодные условия <a href="https://viptriponline.ru/">аренды люкс автомобилей в Сочи</a> с учетом квалификации наших сотрудников и состояния автомобилей, обеспечивая сервис высочайшего уровня.</p>
+
+                    </div>
+                </article>
+            </main>
+            @@include('html/_footer.html', {})
+            <!-- @@include('html/_modal.html', {}) -->
+
+            @@include('html/_js.html', {})
+    </body>
+</html>
