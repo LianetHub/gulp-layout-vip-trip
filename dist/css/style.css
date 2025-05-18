@@ -12059,9 +12059,9 @@ input[type=number] {
 @font-face {
   font-family: "STIXTwoText";
   font-display: swap;
-  src: url("../fonts/STIXTwoText-Medium.woff2") format("woff2"), url("../fonts/STIXTwoText-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
+  src: url("../fonts/STIXTwoText-Italic.woff2") format("woff2"), url("../fonts/STIXTwoText-Italic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
 }
 @font-face {
   font-family: "Mulish";
@@ -12073,22 +12073,22 @@ input[type=number] {
 @font-face {
   font-family: "STIXTwoText";
   font-display: swap;
-  src: url("../fonts/STIXTwoText-Regular.woff2") format("woff2"), url("../fonts/STIXTwoText-Regular.woff") format("woff");
-  font-weight: 400;
+  src: url("../fonts/STIXTwoText-Medium.woff2") format("woff2"), url("../fonts/STIXTwoText-Medium.woff") format("woff");
+  font-weight: 500;
   font-style: normal;
-}
-@font-face {
-  font-family: "STIXTwoText";
-  font-display: swap;
-  src: url("../fonts/STIXTwoText-Italic.woff2") format("woff2"), url("../fonts/STIXTwoText-Italic.woff") format("woff");
-  font-weight: 400;
-  font-style: italic;
 }
 @font-face {
   font-family: "Taviraj";
   font-display: swap;
   src: url("../fonts/Taviraj-Medium-Italic.woff2") format("woff2"), url("../fonts/Taviraj-Medium-Italic.woff") format("woff");
   font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "STIXTwoText";
+  font-display: swap;
+  src: url("../fonts/STIXTwoText-Regular.woff2") format("woff2"), url("../fonts/STIXTwoText-Regular.woff") format("woff");
+  font-weight: 400;
   font-style: normal;
 }
 .article blockquote::before, .promo__service-caption::before, .select2-container--default .select2-selection--single .select2-selection__arrow:before, .swiper-button-next,
